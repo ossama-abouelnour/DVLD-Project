@@ -23,5 +23,11 @@ namespace DVLD_Project
             frmListPeople frm = new frmListPeople();
             frm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmFindPerson frm = new frmFindPerson();
+            frm.ShowDialog();
+        }
     }
 }

@@ -4,3 +4,9 @@ D:\repos\C#\Projects\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.AssemblyRe
 D:\repos\C#\Projects\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.CoreCompileInputs.cache
 D:\repos\C#\Projects\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.dll
 D:\repos\C#\Projects\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.pdb
+D:\repos\GitHub\DVLD-Project\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.dll
+D:\repos\GitHub\DVLD-Project\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.pdb
+D:\repos\GitHub\DVLD-Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.AssemblyReference.cache
+D:\repos\GitHub\DVLD-Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.CoreCompileInputs.cache
+D:\repos\GitHub\DVLD-Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.dll
+D:\repos\GitHub\DVLD-Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.pdb
