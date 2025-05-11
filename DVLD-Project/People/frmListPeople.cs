@@ -16,7 +16,7 @@ namespace DVLD_Project.People
     {
         private static DataTable _dtAllPeople = clsPerson.GetAllPeople();
 
-        private DataTable _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo", "FirstName", "MiddleName", "LastName", "Gender", "DateOfBirth", "CountryName", "Phone", "Email");
+        private DataTable _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo", "FirstName", "MiddleName", "LastName", "GenderCaption", "DateOfBirth", "CountryName", "Phone", "Email");
 
         public frmListPeople()
         {
@@ -83,7 +83,7 @@ namespace DVLD_Project.People
         {
             _dtAllPeople = clsPerson.GetAllPeople();
 
-            _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo", "FirstName", "MiddleName", "LastName", "Gender", "DateOfBirth", "CountryName", "Phone", "Email");
+            _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo", "FirstName", "MiddleName", "LastName", "GenderCaption", "DateOfBirth", "CountryName", "Phone", "Email");
 
             dgvPeople.DataSource = _dtPeople;
             lblRecordsCount.Text = _dtPeople.Rows.Count.ToString();
