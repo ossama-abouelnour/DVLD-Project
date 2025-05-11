@@ -45,6 +45,7 @@ namespace DVLD_DataAccess
         public static bool GetCountryInfoByName(string CountryName, ref int CountryID)
         {
             bool isFound = false;
+
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
             string query = "SELECT * FROM Countries WHERE CountryName = @CountryName";

@@ -54,15 +54,16 @@ namespace DVLD_Project.People.Controls
 
         private void _FillPersonInfo()
         {
-            _PersonID = PersonID;
-            lblPersonID.Text = PersonID.ToString();
+            llEditPersonInfo.Enabled = true;
+            _PersonID = _Person.PersonID;
+            lblPersonID.Text = _Person.PersonID.ToString();
             lblName.Text = _Person.FullName;
             lblNationalNo.Text = _Person.NationalNo;
             lblGender.Text = _Person.Gender == 0 ? "Male" : "Female";
             lblEmail.Text = _Person.Email;
             lblAddress.Text = _Person.Address;
             lblDateOfBirth.Text = _Person.DateOfBirth.ToString();
-            lblCountry.Text = _Person.CountryInfo.CountryName;
+            lblCountry.Text = clsCountry.Find(_Person.NationalityCountryID).CountryName.ToString();
 
             _LoadPersonImage();
         }

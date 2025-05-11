@@ -68,7 +68,7 @@ namespace DVLD_Business
             this.Phone = Phone;
             this.Email = Email;
             this.NationalityCountryID = NationalityCountryID;
-            this.CountryInfo = clsCountry.Find(NationalityCountryID);
+            this.CountryInfo = clsCountry.Find(this.NationalityCountryID);
             this.ImagePath = ImagePath;
 
             Mode = enMode.Update;
@@ -100,7 +100,9 @@ namespace DVLD_Business
                 ref Gender, ref Address, ref Phone, ref Email, ref NationalityCountryID, ref ImagePath);
 
             if (isFound)
-            { return new clsPerson(PersonID, FirstName, MiddleName, LastName, NationalNo, DateOfBirth, Gender, Address, Phone, Email, NationalityCountryID, ImagePath); }
+            { 
+                return new clsPerson(PersonID, FirstName, MiddleName, LastName, NationalNo, DateOfBirth, Gender, Address, Phone, Email, NationalityCountryID, ImagePath); 
+            }
 
             else
                 return null;

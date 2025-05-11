@@ -34,7 +34,7 @@ namespace DVLD_DataAccess
                     LastName = (string)reader["LastName"];
                     NationalNo = (string)reader["NationalNo"];
                     DateOfBirth = (DateTime)reader["DateOfBirth"];
-                    Gender = (short)reader["Gender"];
+                    Gender = Convert.ToInt16(reader["Gender"]);
                     Address = (string)reader["Address"];
                     Phone = (string)reader["Phone"];
                     if (reader["Email"] != DBNull.Value)
@@ -46,7 +46,7 @@ namespace DVLD_DataAccess
                         Email = "";
                     }
 
-                    NationalityCountryID = (int)reader["NationalityCountryID"];
+                    NationalityCountryID = Convert.ToInt32(reader["NationalityCountryID"]);
 
                     if (reader["ImagePath"] != DBNull.Value)
                     {
@@ -271,17 +271,17 @@ namespace DVLD_DataAccess
             DataTable dt = new DataTable();
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = @"SELECT People.PersonID, People.NationalNo,
-                            People.FirstName, People.SecondName, People.ThirdName, People.LastName,
-			                People.DateOfBirth, People.Gender,  
+            string query = @"SELECT PersonID, NationalNo,
+                            FirstName, MiddleName, LastName,
+                            DateOfBirth, Gender,  
                             CASE
                             WHEN People.Gender = 0 THEN 'Male'
                             ELSE 'Female'
-                            END as GenderCaption
-                            People.Address, People.Phone, People.Email, 
-                            People.NationalityCountryID, Countries.CountryName, People.ImagePath
-                            FROM            People INNER JOIN
-                            Countries ON People.NationalityCountryID = Countries.CountryID;
+                            END as GenderCaption,
+                            Address, Phone, Email, 
+                            NationalityCountryID, CountryName, ImagePath
+                            FROM People
+                            INNER JOIN Countries ON People.NationalityCountryID = Countries.CountryID
                             ORDER BY People.FirstName;";
 
             SqlCommand command = new SqlCommand(query, connection);

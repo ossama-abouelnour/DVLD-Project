@@ -71,12 +71,9 @@ namespace DVLD_Project.People.Controls
 
         public void LoadPersonInfo(int PersonID)
         {
-            if (!DesignMode && cbFilterBy.Items.Count > 1)
-            {
-                cbFilterBy.SelectedIndex = 1;
-            }
+                          
+            cbFilterBy.SelectedIndex = 1;
 
-            
             txtFilterValue.Text = PersonID.ToString();
             FindNow();
 
@@ -123,10 +120,10 @@ namespace DVLD_Project.People.Controls
 
         private void ctrlPersonCardWithFilter_Load(object sender, EventArgs e)
         {
-            if (!DesignMode && cbFilterBy.Items.Count > 0)
-            {
-                cbFilterBy.SelectedIndex = 0;
-            }
+
+
+            cbFilterBy.SelectedIndex = 0;
+
             
             txtFilterValue.Focus();
 
@@ -157,10 +154,10 @@ namespace DVLD_Project.People.Controls
 
         private void DataBackEvent(object sender, int PersonID)
         {
-            if (!DesignMode && cbFilterBy.Items.Count > 1)
-            {
-                cbFilterBy.SelectedIndex = 1;
-            }
+
+
+            cbFilterBy.SelectedIndex = 1;
+
             txtFilterValue.Text = PersonID.ToString();
             ctrlPersonCard1.LoadPersonInfo(PersonID);
         }

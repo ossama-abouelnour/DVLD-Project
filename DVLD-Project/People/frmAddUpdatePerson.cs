@@ -112,20 +112,43 @@ namespace DVLD_Project.People
             txtLastName.Text = _Person.LastName;
             txtNationalNo.Text = _Person.NationalNo;
             dtpDateOfBirth.Value = _Person.DateOfBirth;
+            txtPhone.Text = _Person.Phone;
 
             if (_Person.Gender == 0)
+            {
                 rbMale.Checked = true;
-            else 
+            }
+                
+            else
+            {
                 rbFemale.Checked = true;
+            }
+                
             
             txtAddress.Text = _Person.Address;
             txtEmail.Text = _Person.Email;
-            cbCountries.SelectedIndex = cbCountries.FindString(_Person.CountryInfo.CountryName);
 
-            if(_Person.ImagePath != "")
+            if(_Person.CountryInfo != null && !string.IsNullOrEmpty(_Person.CountryInfo.CountryName))
             {
-                pbPersonImage.ImageLocation = _Person.ImagePath;   
+                cbCountries.SelectedIndex = cbCountries.FindString(_Person.CountryInfo.CountryName);
             }
+
+            else
+            {
+                cbCountries.SelectedIndex = -1;
+            }
+
+
+            if (_Person.ImagePath != "")
+            {
+                pbPersonImage.ImageLocation = _Person.ImagePath;
+            }
+            else
+            {
+                pbPersonImage.Image = rbMale.Checked ? Resources.male1 : Resources.female;
+            }
+            
+
 
             llRemoveImage.Visible = (_Person.ImagePath != "");
         }
@@ -231,7 +254,7 @@ namespace DVLD_Project.People
 
         private void ValidateEmptyTextBox(object sender, CancelEventArgs e)
         {
-            TextBox Temp = ((TextBox)sender);
+            TextBoxBase Temp = ((TextBoxBase)sender);
 
             if (string.IsNullOrEmpty(Temp.Text.Trim()))
             {
@@ -250,7 +273,7 @@ namespace DVLD_Project.People
                 return;
 
 
-            if(clsValidation.ValidateEmail(txtEmail.Text.Trim()))
+            if(!clsValidation.ValidateEmail(txtEmail.Text.Trim()))
             {
                 e.Cancel=true;
                 errorProvider1.SetError(txtEmail, "Invalid Email Format");
