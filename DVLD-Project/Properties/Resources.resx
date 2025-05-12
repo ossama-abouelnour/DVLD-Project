@@ -142,8 +142,8 @@
   <data name="drivers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\drivers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\MyIcons\test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sign-form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\sign-form.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,11 +151,14 @@
   <data name="earth" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\earth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mail1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\mail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="black-circle-xmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\black-circle-xmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="document-adjustment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\MyIcons\document-adjustment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\user-edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="male1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,11 +172,17 @@
   <data name="male" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="people" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="id-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\id-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="telephone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\telephone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black-circle-xmark1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\black-circle-xmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="account-setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\account-setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +199,8 @@
   <data name="RoyalLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RoyalLogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sign-form" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\MyIcons\sign-form.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ancestors" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\ancestors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,8 +211,8 @@
   <data name="user-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\user-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="circle-xmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\circle-xmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="id-card1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\id-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user-profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\user-profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,6 +226,12 @@
   <data name="employee-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\employee-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="document-adjustment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\document-adjustment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="driving-license" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\driving-license.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -229,10 +244,10 @@
   <data name="social-number" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\MyIcons\social-number.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="people" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\MyIcons\people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="circle-xmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circle-xmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\MyIcons\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phone-call" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\MyIcons\phone-call.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

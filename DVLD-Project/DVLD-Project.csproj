@@ -271,5 +271,14 @@
   <ItemGroup>
     <None Include="Icons\MyIcons\Search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\MyIcons\user-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\MyIcons\black-circle-xmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\MyIcons\phone-call.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -35,19 +35,19 @@
             this.btnClose = new MaterialSkin.Controls.MaterialButton();
             this.dgvPeople = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addANewPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.callToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblRecordsCount = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbFilterBy = new System.Windows.Forms.ComboBox();
             this.txtFilterValue = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.btnAddPerson = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addANewPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeople)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -119,42 +119,9 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(163, 136);
             // 
-            // showDetailsToolStripMenuItem
-            // 
-            this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.showDetailsToolStripMenuItem.Text = "Show Details";
-            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
-            // 
-            // addANewPersonToolStripMenuItem
-            // 
-            this.addANewPersonToolStripMenuItem.Name = "addANewPersonToolStripMenuItem";
-            this.addANewPersonToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.addANewPersonToolStripMenuItem.Text = "Add New Person";
-            this.addANewPersonToolStripMenuItem.Click += new System.EventHandler(this.addANewPersonToolStripMenuItem_Click);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.editToolStripMenuItem.Text = "Edit";
-            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
-            // 
-            // sendEmailToolStripMenuItem
-            // 
-            this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
-            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.sendEmailToolStripMenuItem.Text = "Send Email";
-            // 
             // callToolStripMenuItem
             // 
+            this.callToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.phone_call;
             this.callToolStripMenuItem.Name = "callToolStripMenuItem";
             this.callToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.callToolStripMenuItem.Text = "Call";
@@ -208,27 +175,6 @@
             this.txtFilterValue.TabIndex = 42;
             this.txtFilterValue.TextChanged += new System.EventHandler(this.txtFilterValue_TextChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::DVLD_Project.Properties.Resources.people;
-            this.pictureBox1.Location = new System.Drawing.Point(510, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::DVLD_Project.Properties.Resources.circle_xmark;
-            this.pictureBox12.Location = new System.Drawing.Point(1084, 592);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 36;
-            this.pictureBox12.TabStop = false;
-            // 
             // btnAddPerson
             // 
             this.btnAddPerson.BackgroundImage = global::DVLD_Project.Properties.Resources.user_add;
@@ -240,6 +186,66 @@
             this.btnAddPerson.TabIndex = 43;
             this.btnAddPerson.UseVisualStyleBackColor = true;
             this.btnAddPerson.Click += new System.EventHandler(this.btnAddPerson_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = global::DVLD_Project.Properties.Resources.people;
+            this.pictureBox1.Location = new System.Drawing.Point(510, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(171, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
+            // showDetailsToolStripMenuItem
+            // 
+            this.showDetailsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.id_card1;
+            this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.showDetailsToolStripMenuItem.Text = "Show Details";
+            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
+            // 
+            // addANewPersonToolStripMenuItem
+            // 
+            this.addANewPersonToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.user_add;
+            this.addANewPersonToolStripMenuItem.Name = "addANewPersonToolStripMenuItem";
+            this.addANewPersonToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.addANewPersonToolStripMenuItem.Text = "Add New Person";
+            this.addANewPersonToolStripMenuItem.Click += new System.EventHandler(this.addANewPersonToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.user_edit;
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.black_circle_xmark1;
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // sendEmailToolStripMenuItem
+            // 
+            this.sendEmailToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.mail1;
+            this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
+            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.sendEmailToolStripMenuItem.Text = "Send Email";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::DVLD_Project.Properties.Resources.circle_xmark;
+            this.pictureBox12.Location = new System.Drawing.Point(1084, 592);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(36, 36);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 36;
+            this.pictureBox12.TabStop = false;
             // 
             // frmListPeople
             // 
