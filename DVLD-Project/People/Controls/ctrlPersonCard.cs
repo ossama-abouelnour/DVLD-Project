@@ -114,5 +114,12 @@ namespace DVLD_Project.People.Controls
             frm.ShowDialog();
             LoadPersonInfo(_PersonID);
         }
+
+        private void llEditPersonInfo_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmAddUpdatePerson frm = new frmAddUpdatePerson(_PersonID);
+            frm.ShowDialog();
+            LoadPersonInfo(_PersonID);
+        }
     }
 }

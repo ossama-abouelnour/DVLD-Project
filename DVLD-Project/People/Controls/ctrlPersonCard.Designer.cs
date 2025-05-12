@@ -142,7 +142,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::DVLD_Project.Properties.Resources.earth;
-            this.pictureBox8.Location = new System.Drawing.Point(443, 117);
+            this.pictureBox8.Location = new System.Drawing.Point(443, 129);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(36, 27);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +152,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::DVLD_Project.Properties.Resources.telephone;
-            this.pictureBox7.Location = new System.Drawing.Point(443, 75);
+            this.pictureBox7.Location = new System.Drawing.Point(443, 87);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(36, 27);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,7 +162,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::DVLD_Project.Properties.Resources.calendar;
-            this.pictureBox6.Location = new System.Drawing.Point(443, 29);
+            this.pictureBox6.Location = new System.Drawing.Point(443, 41);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(36, 27);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -252,7 +252,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::DVLD_Project.Properties.Resources.home;
-            this.pictureBox5.Location = new System.Drawing.Point(109, 261);
+            this.pictureBox5.Location = new System.Drawing.Point(109, 273);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(36, 27);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -262,7 +262,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::DVLD_Project.Properties.Resources.mail;
-            this.pictureBox4.Location = new System.Drawing.Point(109, 216);
+            this.pictureBox4.Location = new System.Drawing.Point(109, 228);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(36, 27);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -272,7 +272,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::DVLD_Project.Properties.Resources.Person_32;
-            this.pictureBox3.Location = new System.Drawing.Point(109, 169);
+            this.pictureBox3.Location = new System.Drawing.Point(109, 181);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(36, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -282,7 +282,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVLD_Project.Properties.Resources.social_number;
-            this.pictureBox2.Location = new System.Drawing.Point(109, 117);
+            this.pictureBox2.Location = new System.Drawing.Point(109, 129);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -292,7 +292,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DVLD_Project.Properties.Resources.employee_card;
-            this.pictureBox1.Location = new System.Drawing.Point(109, 75);
+            this.pictureBox1.Location = new System.Drawing.Point(109, 87);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -352,7 +352,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::DVLD_Project.Properties.Resources.id_card;
-            this.pictureBox9.Location = new System.Drawing.Point(109, 23);
+            this.pictureBox9.Location = new System.Drawing.Point(109, 35);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(36, 33);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -382,17 +382,18 @@
             // llEditPersonInfo
             // 
             this.llEditPersonInfo.AutoSize = true;
-            this.llEditPersonInfo.Location = new System.Drawing.Point(644, 23);
+            this.llEditPersonInfo.Location = new System.Drawing.Point(697, 23);
             this.llEditPersonInfo.Name = "llEditPersonInfo";
             this.llEditPersonInfo.Size = new System.Drawing.Size(32, 13);
             this.llEditPersonInfo.TabIndex = 34;
             this.llEditPersonInfo.TabStop = true;
             this.llEditPersonInfo.Text = "EDIT";
+            this.llEditPersonInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llEditPersonInfo_LinkClicked_1);
             // 
             // pbPersonImage
             // 
             this.pbPersonImage.Image = global::DVLD_Project.Properties.Resources.male2;
-            this.pbPersonImage.Location = new System.Drawing.Point(593, 46);
+            this.pbPersonImage.Location = new System.Drawing.Point(646, 46);
             this.pbPersonImage.Name = "pbPersonImage";
             this.pbPersonImage.Size = new System.Drawing.Size(131, 144);
             this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

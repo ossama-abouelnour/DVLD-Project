@@ -1,4 +1,5 @@
 ﻿using DVLD_Project.People;
+using DVLD_Project.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +28,12 @@ namespace DVLD_Project
         private void button1_Click(object sender, EventArgs e)
         {
             frmFindPerson frm = new frmFindPerson();
+            frm.ShowDialog();
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateUser frm = new frmAddUpdateUser();
             frm.ShowDialog();
         }
     }

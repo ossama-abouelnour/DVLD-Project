@@ -40,3 +40,4 @@ D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD-Project.exe
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD-Project.pdb
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.People.frmFindPerson.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.People.Controls.frmShowPersonInfo.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.User.frmAddUpdateUser.resources
