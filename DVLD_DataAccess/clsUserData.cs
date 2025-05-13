@@ -32,7 +32,7 @@ namespace DVLD_DataAccess
                     isFound = true;
 
                     PersonID = (int)reader["PersonID"];
-                    UserName = (string)reader[clsUserIdintity.UserName];
+                    UserName = (string)reader["UserName"];
                     Password = (string)reader["Password"];
                     IsActive = (bool)reader["IsActive"];
                 }
@@ -162,7 +162,7 @@ namespace DVLD_DataAccess
             DataTable dt = new DataTable();
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
             string query = @"SELECT Users.UserID, Users.PersonID, 
-                           FullName = People.FirstName + ' ' + People.MiddleName + ' ' + People.LastName,
+                           FullName = People.FirstName + ' ' + People.LastName,
                            Users.UserName, Users.IsActive
                            FROM Users INNER JOIN
                            People ON People.PersonID = Users.UserID;";
