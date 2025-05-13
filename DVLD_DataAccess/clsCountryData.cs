@@ -14,6 +14,7 @@ namespace DVLD_DataAccess
             string query = "SELECT * FROM Countries WHERE CountryID = @CountryID";
 
             SqlCommand command = new SqlCommand(query, connection);
+
             command.Parameters.AddWithValue("@CountryID", CountryID);
 
             try
@@ -25,7 +26,7 @@ namespace DVLD_DataAccess
                 if(reader.Read()) 
                 {
                     isFound = true;
-                    CountryName = (string)reader["CountryName"];
+                    CountryName = (string)(reader["CountryName"]);
                 }
                 else
                     isFound = false;
@@ -34,7 +35,8 @@ namespace DVLD_DataAccess
             }
             catch (Exception ex)
             {
-                isFound=false;
+                //Console.WriteLine("Error: " + ex.Message);
+                isFound = false;
             }
             finally
             {

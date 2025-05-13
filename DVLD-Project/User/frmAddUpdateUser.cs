@@ -200,5 +200,35 @@ namespace DVLD_Project.User
             }
 
         }
+
+        private void txtPassword_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtPassword.Text.Trim()))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(txtPassword, "Password cannot be blank");
+                return;
+            }
+
+            else
+            {
+                errorProvider1.SetError(txtPassword, null);
+            }
+        }
+
+        private void txtConfirmPassword_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtConfirmPassword.Text.Trim() != txtPassword.Text.Trim())
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(txtConfirmPassword, "Passwords confirmation must match the password");
+                return;
+            }
+
+            else
+            {
+                errorProvider1.SetError(txtPassword, null);
+            }
+        }
     }
 }

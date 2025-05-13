@@ -10,13 +10,13 @@ namespace DVLD_Business
         public int CountryID { get; set; }
         public string CountryName { get; set; }
 
-        clsCountry() 
+        public clsCountry() 
         {
             this.CountryID = -1;
             this.CountryName = "";
         }
 
-        clsCountry(int countryID, string countryName)
+        private clsCountry(int countryID, string countryName)
         {
             this.CountryID = countryID;
             this.CountryName = countryName;
