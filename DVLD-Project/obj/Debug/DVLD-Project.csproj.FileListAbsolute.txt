@@ -42,3 +42,4 @@ D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.People.frmFindP
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.People.Controls.frmShowPersonInfo.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.User.frmAddUpdateUser.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.frmTest.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.User.ctrlUserCard.resources

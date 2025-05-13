@@ -32,7 +32,7 @@ namespace DVLD_DataAccess
                     isFound = true;
 
                     PersonID = (int)reader["PersonID"];
-                    UserName = (string)reader["UserName"];
+                    UserName = (string)reader[clsUserIdintity.UserName];
                     Password = (string)reader["Password"];
                     IsActive = (bool)reader["IsActive"];
                 }
@@ -207,7 +207,7 @@ namespace DVLD_DataAccess
             try
             {
                 connection.Open();
-                rowsAffected = command.ExecuteNonQuery();                
+                rowsAffected = command.ExecuteNonQuery();
             }
             catch (Exception ex)
             {

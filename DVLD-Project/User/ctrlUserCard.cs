@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace DVLD_Project.User
 {
+    [ToolboxItem(true)]
     public partial class ctrlUserCard : UserControl
     {
         private clsUser _User;
@@ -32,7 +33,7 @@ namespace DVLD_Project.User
             _UserID = UserID;
             if (_User == null)
             {
-                //_ResetPersonInfo();
+                _ResetPersonInfo();
 
                 MessageBox.Show("No User With UserID: " + UserID.ToString() + " Found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
