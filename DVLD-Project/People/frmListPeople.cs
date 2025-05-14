@@ -27,6 +27,7 @@ namespace DVLD_Project.People
         {
             frmAddUpdatePerson frm = new frmAddUpdatePerson();
             frm.ShowDialog();
+            _RefreshPeopleList();
         }
 
         private void frmListPeople_Load(object sender, EventArgs e)
@@ -39,10 +40,10 @@ namespace DVLD_Project.People
             if(dgvPeople.Rows.Count > 0)
             {
                 dgvPeople.Columns[0].HeaderText = "Person ID";
-                dgvPeople.Columns[0].Width = 110;
+                dgvPeople.Columns[0].Width = 70;
 
                 dgvPeople.Columns[1].HeaderText = "National No.";
-                dgvPeople.Columns[1].Width = 120;
+                dgvPeople.Columns[1].Width = 70;
 
                 dgvPeople.Columns[2].HeaderText = "First Name";
                 dgvPeople.Columns[2].Width = 120;
@@ -66,7 +67,7 @@ namespace DVLD_Project.People
                 dgvPeople.Columns[8].Width = 120;
 
                 dgvPeople.Columns[9].HeaderText = "Email";
-                dgvPeople.Columns[9].Width = 120;
+                dgvPeople.Columns[9].Width = 135;
 
                 
             }
@@ -100,7 +101,7 @@ namespace DVLD_Project.People
         {
             frmAddUpdatePerson frm = new frmAddUpdatePerson();
             frm.ShowDialog();
-
+            _RefreshPeopleList();
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)

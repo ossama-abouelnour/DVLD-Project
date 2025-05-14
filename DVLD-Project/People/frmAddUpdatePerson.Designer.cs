@@ -591,7 +591,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAddUpdatePerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add / Edit Person Info";
+            this.Text = "Add a Person";
             this.Load += new System.EventHandler(this.frmAddUpdatePerson_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

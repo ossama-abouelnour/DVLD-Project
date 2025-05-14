@@ -113,6 +113,7 @@ namespace DVLD_Project.People
             txtNationalNo.Text = _Person.NationalNo;
             dtpDateOfBirth.Value = _Person.DateOfBirth;
             txtPhone.Text = _Person.Phone;
+            this.Text = "Update Info";
 
             if (_Person.Gender == 0)
             {
@@ -238,6 +239,7 @@ namespace DVLD_Project.People
 
             else
                 MessageBox.Show("Data Is Not Saved", "Not Saved", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            
         }
 
         private void rbFemale_Click(object sender, EventArgs e)
