@@ -128,7 +128,7 @@ namespace DVLD_Project.People
                     FilterColumn = "PersonID";
                     break;
 
-                case "National No":
+                case "National No.":
                     FilterColumn = "NationalNo";
                     break;
 

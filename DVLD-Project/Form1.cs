@@ -1,4 +1,6 @@
 ﻿using DVLD_Business;
+using DVLD_Project.Global_Classes;
+using DVLD_Project.Login;
 using DVLD_Project.People;
 using DVLD_Project.User;
 using System;
@@ -15,9 +17,12 @@ namespace DVLD_Project
 {
     public partial class frmMain : Form
     {
-        public frmMain()
+        frmLogin _frmLogin;
+
+        public frmMain(frmLogin frm)
         {
             InitializeComponent();
+            _frmLogin = frm;  
         }
 
         private void peopleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -38,5 +43,23 @@ namespace DVLD_Project
             frm.ShowDialog();
         }
 
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clsGlobal.CurrentUser = null;
+            _frmLogin.Show();
+            this.Close();
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangePassword frm = new frmChangePassword(clsGlobal.CurrentUser.UserID);
+            frm.ShowDialog();
+        }
+
+        private void currentUserInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUserInfo frm = new frmUserInfo(clsGlobal.CurrentUser.UserID);
+            frm.ShowDialog();
+        }
     }
 }
