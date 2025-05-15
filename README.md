@@ -43,6 +43,10 @@ To get started:
 4. 📂 Restore or configure the database using the provided scripts (to be added).  
 5. ▶️ Build and run the project within Visual Studio.
 
+   Login credentials
+   Username: Admin
+   Password: 1234
+
 > ℹ️ Setup instructions will be updated as the project progresses.
 
 ## 🎯 Purpose
