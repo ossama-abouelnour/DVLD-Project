@@ -35,6 +35,18 @@ namespace DVLD_Business
             this.Fee = ApplicationFee;
         }
 
+        public static clsApplicationType Find(int ID)
+        {
+            string Title = ""; float Fee = 0;
+            if (clsApplicationTypeData.GetApplicationTypeInfoByID((int)ID, ref Title, ref Fee))
+            {
+                return new clsApplicationType(ID, Title, Fee);
+            }
+
+            else
+                return null;
+        }
+
         private bool _AddNewApplicationType()
         {
             this.ID = clsApplicationTypeData.AddNewApplicationType(this.Title, this.Fee);

@@ -25,11 +25,19 @@ namespace DVLD_DataAccess
 
                 if (reader.Read())
                 {
-                    ApplicationTypeTitle = (string)reader["ApplicationTypeTitle"];
-                    ApplicationFee = (float)reader["ApplicationFee"];
                     isFound = true;
-                    reader.Close();
+
+                    ApplicationTypeTitle = Convert.ToString(reader["ApplicationTypeTitle"]);
+                    ApplicationFee = Convert.ToSingle(reader["ApplicationFees"]);
+                    
+                    
                 }
+
+                else
+                {
+                    isFound = false;
+                }
+                reader.Close();
 
             }
             catch (Exception ex)
