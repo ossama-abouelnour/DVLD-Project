@@ -1,4 +1,5 @@
 ﻿using DVLD_Business;
+using DVLD_Project.Applications.Application_Types;
 using DVLD_Project.Global_Classes;
 using DVLD_Project.Login;
 using DVLD_Project.People;
@@ -59,6 +60,12 @@ namespace DVLD_Project
         private void currentUserInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUserInfo frm = new frmUserInfo(clsGlobal.CurrentUser.UserID);
+            frm.ShowDialog();
+        }
+
+        private void manageApplicationTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListApplicationTypes frm = new frmListApplicationTypes();
             frm.ShowDialog();
         }
     }

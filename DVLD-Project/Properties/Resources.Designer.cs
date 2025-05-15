@@ -93,6 +93,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Applications {
+            get {
+                object obj = ResourceManager.GetObject("Applications", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap black_circle_xmark {
             get {
                 object obj = ResourceManager.GetObject("black-circle-xmark", resourceCulture);
@@ -146,6 +156,16 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap document_adjustment {
             get {
                 object obj = ResourceManager.GetObject("document-adjustment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap document_adjustment1 {
+            get {
+                object obj = ResourceManager.GetObject("document-adjustment1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
