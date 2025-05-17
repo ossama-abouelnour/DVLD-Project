@@ -3,12 +3,10 @@
   "WorkspaceRootPath": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\applications\\application types\\frmeditapplicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:applications\\application types\\frmeditapplicationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2D27A41D-01B6-4B59-93E2-4FF4298A755B}|..\\DVLD_Business\\DVLD_Business.csproj|d:\\repos\\github\\dvld-project\\dvld_business\\clstesttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\applications\\application types\\frmlistapplicationtypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:applications\\application types\\frmlistapplicationtypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EEB1290B-021E-4694-80F9-F4DD0A359525}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|d:\\repos\\github\\dvld-project\\dvld_dataaccess\\clstesttypedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +25,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmEditApplicationType.cs [Design]",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\Application Types\\frmEditApplicationType.cs",
-              "RelativeDocumentMoniker": "Applications\\Application Types\\frmEditApplicationType.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\Application Types\\frmEditApplicationType.cs [Design]",
-              "RelativeToolTip": "Applications\\Application Types\\frmEditApplicationType.cs [Design]",
+              "Title": "clsTestType.cs",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsTestType.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsTestType.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsTestType.cs",
+              "RelativeToolTip": "..\\DVLD_Business\\clsTestType.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T19:29:37.403Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-17T19:52:04.067Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmListApplicationTypes.cs [Design]",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\Application Types\\frmListApplicationTypes.cs",
-              "RelativeDocumentMoniker": "Applications\\Application Types\\frmListApplicationTypes.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\Application Types\\frmListApplicationTypes.cs [Design]",
-              "RelativeToolTip": "Applications\\Application Types\\frmListApplicationTypes.cs [Design]",
+              "Title": "clsTestTypeData.cs",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsTestTypeData.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsTestTypeData.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsTestTypeData.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsTestTypeData.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAHMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T19:10:50.945Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-17T16:50:21.37Z",
+              "EditorCaption": ""
             }
           ]
         },
