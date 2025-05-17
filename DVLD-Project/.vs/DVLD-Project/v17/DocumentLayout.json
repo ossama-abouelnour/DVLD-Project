@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\tests\\testtypes\\frmedittesttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:tests\\testtypes\\frmedittesttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\tests\\testtypes\\frmedittesttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:tests\\testtypes\\frmedittesttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\tests\\testtypes\\frmlisttesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:tests\\testtypes\\frmlisttesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\tests\\testtypes\\frmlisttesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:tests\\testtypes\\frmlisttesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,45 +34,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAASwEwAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "frmEditTestType.cs",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Tests\\TestTypes\\frmEditTestType.cs",
+              "RelativeDocumentMoniker": "Tests\\TestTypes\\frmEditTestType.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Tests\\TestTypes\\frmEditTestType.cs",
+              "RelativeToolTip": "Tests\\TestTypes\\frmEditTestType.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T20:47:07.921Z",
+              "WhenOpened": "2025-05-17T21:07:03.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "frmEditTestType.cs [Design]",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Tests\\TestTypes\\frmEditTestType.cs",
+              "RelativeDocumentMoniker": "Tests\\TestTypes\\frmEditTestType.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Tests\\TestTypes\\frmEditTestType.cs [Design]",
+              "RelativeToolTip": "Tests\\TestTypes\\frmEditTestType.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T20:47:03.523Z",
+              "WhenOpened": "2025-05-17T21:03:28.94Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmListTestTypes.cs",
               "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Tests\\TestTypes\\frmListTestTypes.cs",
               "RelativeDocumentMoniker": "Tests\\TestTypes\\frmListTestTypes.cs",
               "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Tests\\TestTypes\\frmListTestTypes.cs",
               "RelativeToolTip": "Tests\\TestTypes\\frmListTestTypes.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwDYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T20:41:34.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmListTestTypes.cs [Design]",
               "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Tests\\TestTypes\\frmListTestTypes.cs",
               "RelativeDocumentMoniker": "Tests\\TestTypes\\frmListTestTypes.cs",
