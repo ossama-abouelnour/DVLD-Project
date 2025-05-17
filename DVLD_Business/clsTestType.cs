@@ -12,7 +12,6 @@ namespace DVLD_Business
     {
         public enum enMode {AddNew = 0, Update = 1 }
         public enMode Mode = enMode.AddNew;
-
         public enum enTestType { EyeTest = 1, TheoryTest = 2, DrivingTest = 3 }
 
         public clsTestType.enTestType TestTypeID {  get; set; }
