@@ -29,7 +29,6 @@ The project is in early development. Initial work has focused on database struct
 
 - ✏️ Full CRUD operations for driver and licence records  
 - ✅ Test booking and results management  
-- 📊 Reporting and printing  
 - 🔐 User authentication and role-based access  
 - 🎨 UI polish and error handling  
 
