@@ -26,7 +26,7 @@ namespace DVLD_DataAccess
                 if(reader.Read()) 
                 {
                     isFound = true;
-                    CountryName = (string)(reader["CountryName"]);
+                    CountryName = (string)reader["CountryName"];
                 }
                 else
                     isFound = false;

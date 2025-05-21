@@ -64,7 +64,10 @@ namespace DVLD_Project.People.Controls
             lblAddress.Text = _Person.Address;
             lblDateOfBirth.Text = _Person.DateOfBirth.ToString();
             lblPhone.Text = _Person.Phone;
-            lblCountry.Text = clsCountry.Find(_Person.NationalityCountryID).CountryName;
+
+            var Country = clsCountry.Find(_Person.NationalityCountryID).CountryName;
+
+            lblCountry.Text = Country.ToString();
 
             _LoadPersonImage();
         }

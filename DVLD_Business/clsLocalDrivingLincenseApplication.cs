@@ -10,9 +10,9 @@ namespace DVLD_Business
 {
     public class clsLocalDrivingLincenseApplication : clsApplication
     {
-        public enum enMode {AddNew = 0, Update = 1};
+        public enum enMode { AddNew = 0, Update = 1 };
         public enMode Mode;
-        public int LocalDrivingLicenseApplicationID {  get; set; }
+        public int LocalDrivingLicenseApplicationID { get; set; }
 
         public int LicenseClassID { get; set; }
 
@@ -34,8 +34,8 @@ namespace DVLD_Business
 
         }
 
-        private clsLocalDrivingLincenseApplication(int LocalDrivingLicenseApplicationID, int ApplicationID, 
-            DateTime ApplicationDate, int applicationTypeID, enApplicationStatus applicationStatus , 
+        private clsLocalDrivingLincenseApplication(int LocalDrivingLicenseApplicationID, int ApplicationID,
+            DateTime ApplicationDate, int applicationTypeID, enApplicationStatus applicationStatus,
             DateTime lastStatusDate, float paidFees, int createdByUserID, int LicenseClassID)
         {
             this.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
@@ -64,11 +64,11 @@ namespace DVLD_Business
         {
             int ApplicationID = -1, LicenseID = -1;
 
-            if(clsLocalDrivingLincenseApplicationData.GetLocalDrivingLicenseApplicationInfoByID(LocalDrivingLicenseApplicationID, ref ApplicationID, ref LicenseID))
+            if (clsLocalDrivingLincenseApplicationData.GetLocalDrivingLicenseApplicationInfoByID(LocalDrivingLicenseApplicationID, ref ApplicationID, ref LicenseID))
             {
                 clsApplication Application = clsApplication.FindBaseApplication(ApplicationID);
-                return new clsLocalDrivingLincenseApplication(LocalDrivingLicenseApplicationID, Application.ApplicationID, 
-                    Application.ApplicationDate, Application.ApplicationTypeID, Application.ApplicationStatus, Application.LastStatusDate, 
+                return new clsLocalDrivingLincenseApplication(LocalDrivingLicenseApplicationID, Application.ApplicationID,
+                    Application.ApplicationDate, Application.ApplicationTypeID, Application.ApplicationStatus, Application.LastStatusDate,
                     Application.PaidFees, Application.CreatedByUserID, LicenseID);
             }
             else
@@ -81,7 +81,7 @@ namespace DVLD_Business
             if (clsLocalDrivingLincenseApplicationData.GetLocalDrivingLicenseApplicationInfoByApplicationID(ApplicationID, ref LocalDrivingLicenseApplicationID, ref LicenseID))
             {
                 clsApplication Application = clsApplication.FindBaseApplication(ApplicationID);
-                return new clsLocalDrivingLincenseApplication(LocalDrivingLicenseApplicationID, Application.ApplicationID, Application.ApplicationDate, 
+                return new clsLocalDrivingLincenseApplication(LocalDrivingLicenseApplicationID, Application.ApplicationID, Application.ApplicationDate,
                     Application.ApplicationTypeID, Application.ApplicationStatus, Application.LastStatusDate, Application.PaidFees, Application.CreatedByUserID, LicenseID);
             }
             else
@@ -97,7 +97,7 @@ namespace DVLD_Business
             switch (Mode)
             {
                 case enMode.AddNew:
-                    if(_AddNewLocalDrivingLicenseApplication())
+                    if (_AddNewLocalDrivingLicenseApplication())
                     {
                         Mode = enMode.Update;
                         return true;
@@ -107,7 +107,7 @@ namespace DVLD_Business
                         return false;
                     }
 
-                    case enMode.Update:
+                case enMode.Update:
                     return _UpdateDrivingLicenseApplication();
             }
             return false;
@@ -138,7 +138,7 @@ namespace DVLD_Business
 
         public bool DidPassPreviousTest(clsTestType.enTestType CurrentTestType)
         {
-            switch(CurrentTestType)
+            switch (CurrentTestType)
             {
                 case clsTestType.enTestType.EyeTest:
                     return true;
@@ -146,10 +146,10 @@ namespace DVLD_Business
                 case clsTestType.enTestType.TheoryTest:
                     return this.DidPassTestType(clsTestType.enTestType.EyeTest);
 
-                    case clsTestType.enTestType.DrivingTest:
+                case clsTestType.enTestType.DrivingTest:
                     return this.DidPassTestType(clsTestType.enTestType.TheoryTest);
 
-                    default:
+                default:
                     return false;
             }
         }
@@ -164,7 +164,25 @@ namespace DVLD_Business
             return clsLocalDrivingLincenseApplicationData.TotalTrialsPerTest(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
         }
 
+        public static bool AttendedTest(int LocalDrivingLicenseApplicationID, clsTestType.enTestType TestTypeID)
+        {
+            return clsLocalDrivingLincenseApplicationData.TotalTrialsPerTest(LocalDrivingLicenseApplicationID, (int)TestTypeID) > 0;
+        }
 
+        public bool AttendedTest(clsTestType.enTestType TestTypeID)
+        {
+            return clsLocalDrivingLincenseApplicationData.TotalTrialsPerTest(this.LocalDrivingLicenseApplicationID, (int)TestTypeID) > 0;
+        }
+
+        public static bool IsThereAnActiveScheduledTest(int LocalDrivingLicenseApplicationID, clsTestType.enTestType TestTypeID)
+        {
+            return clsLocalDrivingLincenseApplicationData.IsThereAnActiveScheduledTest(LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
+
+        public bool IsThereAnActiveScheduledTest(clsTestType.enTestType TestTypeID)
+        {
+            return clsLocalDrivingLincenseApplicationData.IsThereAnActiveScheduledTest(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
 
     }
 }

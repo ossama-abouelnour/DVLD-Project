@@ -106,23 +106,23 @@ namespace DVLD_DataAccess
                     MiddleName = (string)reader["MiddleName"];
                     LastName = (string)reader["LastName"];
                     DateOfBirth = (DateTime)reader["DateOfBirth"];
-                    Gender = (short)reader["Gender"];
-                    Address = (string)reader["Address"];
-                    Phone = (string)reader["Phone"];
+                    Gender = Convert.ToInt16(reader["Gender"]);
+                    Address =  reader["Address"].ToString();
+                    Phone = reader["Phone"].ToString();
                     if (reader["Email"] != DBNull.Value)
                     {
-                        Email = (string)reader["Email"];
+                        Email = reader["Email"].ToString();
                     }
                     else
                     {
                         Email = "";
                     }
 
-                    NationalityCountryID = (int)reader["NationalityCountryID"];
+                    NationalityCountryID = Convert.ToInt32(reader["NationalityCountryID"]);
 
                     if (reader["ImagePath"] != DBNull.Value)
                     {
-                        ImagePath = (string)reader["ImagePath"];
+                        ImagePath = reader["ImagePath"].ToString();
                     }
 
                     else

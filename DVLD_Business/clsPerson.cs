@@ -68,7 +68,7 @@ namespace DVLD_Business
             this.Phone = Phone;
             this.Email = Email;
             this.NationalityCountryID = NationalityCountryID;
-            this.CountryInfo = clsCountry.Find(this.NationalityCountryID);
+            this.CountryInfo = clsCountry.Find(NationalityCountryID);
             this.ImagePath = ImagePath;
 
             Mode = enMode.Update;
