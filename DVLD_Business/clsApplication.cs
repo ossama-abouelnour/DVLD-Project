@@ -26,6 +26,8 @@ namespace DVLD_Business
         public clsUser CreatedByUserInfo;
         public int ApplicationID { get; set; }
         public int ApplicantPersonID { get; set; }
+
+        public clsPerson PersonInfo { get; set; }
         public string ApplicantFullName
         {
             get
@@ -67,7 +69,7 @@ namespace DVLD_Business
 
         public int CreatedByUserID { get; set; }
 
-        clsApplication()
+        public clsApplication()
         {
             this.ApplicationID = -1;
             this.ApplicantPersonID = -1;
@@ -81,12 +83,16 @@ namespace DVLD_Business
             Mode = enMode.AddNew;
         }
 
-        private clsApplication(enApplicationStatus applicationStatus, int applicationID, int applicantPersonID, DateTime applicationDate, int applicationTypeID, DateTime lastStatusDate, float paidFees, int createdByUserID)
+        private clsApplication(enApplicationStatus applicationStatus, int applicationID, int applicantPersonID, 
+            DateTime applicationDate, int applicationTypeID, DateTime lastStatusDate, float paidFees, int createdByUserID)
         {
             this.Mode = enMode.Update;
             this.ApplicationStatus = applicationStatus;
+
             this.CreatedByUserInfo = clsUser.FindByUserID(createdByUserID);
             this.ApplicationID = applicationID;
+            this.PersonInfo = clsPerson.Find(applicantPersonID);
+
             this.ApplicantPersonID = applicantPersonID;
             this.ApplicationDate = applicationDate;
             this.ApplicationTypeID = applicationTypeID;
@@ -150,6 +156,11 @@ namespace DVLD_Business
                        return _UpdateApplication();
             }
             return false;
+        }
+
+        public bool Delete()
+        {
+            return clsApplicationData.DeleteApplication(this.ApplicationID);
         }
 
         public static bool IsApplicationExist(int ApplicationID)
