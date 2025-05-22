@@ -62,7 +62,7 @@
             this.btnFind.Location = new System.Drawing.Point(562, 19);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(43, 39);
-            this.btnFind.TabIndex = 3;
+            this.btnFind.TabIndex = 1;
             this.btnFind.UseVisualStyleBackColor = true;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
@@ -73,15 +73,16 @@
             this.btnAddPerson.Location = new System.Drawing.Point(611, 19);
             this.btnAddPerson.Name = "btnAddPerson";
             this.btnAddPerson.Size = new System.Drawing.Size(43, 39);
-            this.btnAddPerson.TabIndex = 4;
+            this.btnAddPerson.TabIndex = 2;
             this.btnAddPerson.UseVisualStyleBackColor = true;
+            this.btnAddPerson.Click += new System.EventHandler(this.btnAddPerson_Click);
             // 
             // txtFilterValue
             // 
             this.txtFilterValue.Location = new System.Drawing.Point(288, 30);
             this.txtFilterValue.Name = "txtFilterValue";
             this.txtFilterValue.Size = new System.Drawing.Size(232, 20);
-            this.txtFilterValue.TabIndex = 2;
+            this.txtFilterValue.TabIndex = 0;
             this.txtFilterValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterValue_KeyPress);
             this.txtFilterValue.Validating += new System.ComponentModel.CancelEventHandler(this.txtFilterValue_Validating);
             // 

@@ -126,7 +126,7 @@ namespace DVLD_DataAccess
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = @"INSER INTO Users (PersonID, UserName, Password, IsActive)
+            string query = @"INSERT INTO Users (PersonID, UserName, Password, IsActive)
                             VALUES (@PersonID, @UserName, @Password, @IsActive);
                             SELECT SCOPE_IDENTITY();";
 
@@ -138,6 +138,7 @@ namespace DVLD_DataAccess
 
             try
             {
+                connection.Open();
                 object result = command.ExecuteScalar();
 
                 if (result != null && int.TryParse(result.ToString(), out int InsertedID))
@@ -161,11 +162,9 @@ namespace DVLD_DataAccess
         {
             DataTable dt = new DataTable();
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
-            string query = @"SELECT Users.UserID, Users.PersonID, 
-                           FullName = People.FirstName + ' ' + People.LastName,
-                           Users.UserName, Users.IsActive
-                           FROM Users INNER JOIN
-                           People ON People.PersonID = Users.UserID;";
+            string query = @"SELECT Users.UserID, Users.PersonID, Name = People.FirstName + ' ' + People.LastName, Users.UserName, Users.IsActive
+                            FROM Users INNER JOIN 
+                            People ON Users.PersonID = People.PersonID;";
 
             SqlCommand command = new SqlCommand(query, connection);
 
@@ -356,7 +355,7 @@ namespace DVLD_DataAccess
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
             string query = @"Update Users
-                             SET PersonID = @PersonID
+                             SET PersonID = @PersonID,
                              UserName = @UserName, 
                              Password = @Password, 
                              IsActive = @IsActive
@@ -379,7 +378,7 @@ namespace DVLD_DataAccess
             }
             catch (Exception ex)
             {
-                return false;
+                //return false;
             }
             finally
             {

@@ -134,7 +134,7 @@ namespace DVLD_Project.People.Controls
 
             if (string.IsNullOrEmpty(txtFilterValue.Text.Trim()))
             {
-                e.Cancel = true;
+                //e.Cancel = true;
                 errorProvider1.SetError(txtFilterValue, "This field is required!");
             }
             else
@@ -180,6 +180,13 @@ namespace DVLD_Project.People.Controls
 
 
 
+        }
+
+        private void btnAddPerson_Click(object sender, EventArgs e)
+        {
+            frmAddUpdatePerson frm = new frmAddUpdatePerson();
+            frm.DataBack += DataBackEvent;
+            frm.ShowDialog();
         }
     }
 }

@@ -43,6 +43,8 @@ namespace DVLD_Project.User
                 this.Text = "Add a New User";
                 _User = new clsUser();
                 tpLoginInfo.Enabled = false;
+                btnSave.Visible = false;
+                pbSave.Visible = false;
 
                 ctrlPersonCardWithFilter1.FilterFocus();
             }
@@ -52,8 +54,10 @@ namespace DVLD_Project.User
                 lblTitle.Text = "Update User Info";
                 this.Text = "Update User";
                 tpLoginInfo.Enabled = true;
-                btnSave.Enabled = true;
-
+                btnSave.Visible = true;
+                pbSave.Visible = true;
+                tcUserInfo.SelectedTab = tcUserInfo.TabPages[1];
+                txtUsername.Focus();
             }
 
             txtUsername.Text = "";
@@ -76,12 +80,12 @@ namespace DVLD_Project.User
                 return;
             }
 
-            lblUserID.Text = _UserID.ToString();
+            lblUserID.Text = _User.UserID.ToString();
             txtUsername.Text = _User.UserName;
             txtPassword.Text= _User.Password;
             txtConfirmPassword.Text = _User.Password;
             chkIsActive.Checked = _User.IsActive;
-            ctrlPersonCardWithFilter1.LoadPersonInfo(_User.UserID);
+            ctrlPersonCardWithFilter1.LoadPersonInfo(_User.PersonID);
         }
 
         private void frmAddUpdateUser_Load(object sender, EventArgs e)
@@ -89,18 +93,19 @@ namespace DVLD_Project.User
             _ResetDefaultValues();
 
             if (_Mode == enMode.Update)
-            {
                 _LoadData();
-            }
+            
         }
 
         private void btnPersonInfoNext_Click(object sender, EventArgs e)
         {
             if (_Mode == enMode.Update)
             {
-                btnSave.Enabled = true;
+                btnSave.Visible = true;
+                pbSave.Visible = true;
                 tpLoginInfo.Enabled = true;
                 tcUserInfo.SelectedTab = tcUserInfo.TabPages[1];
+                txtUsername.Focus();
                 return;
             }
 
@@ -114,9 +119,11 @@ namespace DVLD_Project.User
 
                 else
                 {
-                    btnSave.Enabled = true;
+                    btnSave.Visible = true;
+                    pbSave.Visible = true;
                     tpLoginInfo.Enabled = true;
                     tcUserInfo.SelectedTab = tcUserInfo.TabPages[1];
+                    txtUsername.Focus();
                 }
             }
 
@@ -160,7 +167,7 @@ namespace DVLD_Project.User
         {
             if (string.IsNullOrEmpty(txtUsername.Text.Trim()))
             {
-                e.Cancel = true;
+                //e.Cancel = true;
                 errorProvider1.SetError(txtUsername, "Username cannot be blank");
                 return;
             }
@@ -169,7 +176,7 @@ namespace DVLD_Project.User
             {
                 if (clsUser.IsUserExist(txtUsername.Text.Trim()))
                 {
-                    e.Cancel = true;
+                    //e.Cancel = true;
                     errorProvider1.SetError(txtUsername, "Username is already in use");
                     return;
                 }
@@ -187,7 +194,7 @@ namespace DVLD_Project.User
                 {
                     if(clsUser.IsUserExist(txtUsername.Text.Trim()))
                     {
-                        e.Cancel = true;
+                        //e.Cancel = true;
                         errorProvider1.SetError(txtUsername, "Username is already in use");
 
                     }
@@ -205,7 +212,7 @@ namespace DVLD_Project.User
         {
             if (string.IsNullOrEmpty(txtPassword.Text.Trim()))
             {
-                e.Cancel = true;
+                //e.Cancel = true;
                 errorProvider1.SetError(txtPassword, "Password cannot be blank");
                 return;
             }
@@ -220,7 +227,7 @@ namespace DVLD_Project.User
         {
             if (txtConfirmPassword.Text.Trim() != txtPassword.Text.Trim())
             {
-                e.Cancel = true;
+                //e.Cancel = true;
                 errorProvider1.SetError(txtConfirmPassword, "Passwords confirmation must match the password");
                 return;
             }
@@ -229,6 +236,11 @@ namespace DVLD_Project.User
             {
                 errorProvider1.SetError(txtPassword, null);
             }
+        }
+
+        private void frmAddUpdateUser_Activated(object sender, EventArgs e)
+        {
+            ctrlPersonCardWithFilter1.FilterFocus();
         }
     }
 }

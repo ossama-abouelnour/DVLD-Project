@@ -37,7 +37,6 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tcUserInfo = new System.Windows.Forms.TabControl();
             this.tpPersonalInfo = new System.Windows.Forms.TabPage();
-            this.ctrlPersonCardWithFilter1 = new DVLD_Project.People.Controls.ctrlPersonCardWithFilter();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.tpLoginInfo = new System.Windows.Forms.TabPage();
             this.chkIsActive = new System.Windows.Forms.CheckBox();
@@ -54,7 +53,8 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pbSave = new System.Windows.Forms.PictureBox();
+            this.ctrlPersonCardWithFilter1 = new DVLD_Project.People.Controls.ctrlPersonCardWithFilter();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tcUserInfo.SuspendLayout();
             this.tpPersonalInfo.SuspendLayout();
@@ -65,7 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSave)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -84,7 +84,6 @@
             this.btnPersonInfoNext.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPersonInfoNext.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnPersonInfoNext.Depth = 0;
-            this.btnPersonInfoNext.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnPersonInfoNext.HighEmphasis = true;
             this.btnPersonInfoNext.Icon = null;
             this.btnPersonInfoNext.Location = new System.Drawing.Point(731, 452);
@@ -167,15 +166,6 @@
             this.tpPersonalInfo.Text = "Personal Info";
             this.tpPersonalInfo.UseVisualStyleBackColor = true;
             // 
-            // ctrlPersonCardWithFilter1
-            // 
-            this.ctrlPersonCardWithFilter1.FilterEnabled = true;
-            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(3, 6);
-            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
-            this.ctrlPersonCardWithFilter1.ShowAddPerson = true;
-            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(793, 440);
-            this.ctrlPersonCardWithFilter1.TabIndex = 0;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::DVLD_Project.Properties.Resources.right;
@@ -217,7 +207,7 @@
             this.chkIsActive.Location = new System.Drawing.Point(357, 286);
             this.chkIsActive.Name = "chkIsActive";
             this.chkIsActive.Size = new System.Drawing.Size(56, 17);
-            this.chkIsActive.TabIndex = 62;
+            this.chkIsActive.TabIndex = 3;
             this.chkIsActive.Text = "Active";
             this.chkIsActive.UseVisualStyleBackColor = true;
             // 
@@ -226,7 +216,7 @@
             this.txtConfirmPassword.Location = new System.Drawing.Point(357, 223);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(195, 20);
-            this.txtConfirmPassword.TabIndex = 61;
+            this.txtConfirmPassword.TabIndex = 2;
             this.txtConfirmPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtConfirmPassword_Validating);
             // 
             // txtPassword
@@ -234,7 +224,7 @@
             this.txtPassword.Location = new System.Drawing.Point(357, 177);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(195, 20);
-            this.txtPassword.TabIndex = 60;
+            this.txtPassword.TabIndex = 1;
             this.txtPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtPassword_Validating);
             // 
             // txtUsername
@@ -242,7 +232,7 @@
             this.txtUsername.Location = new System.Drawing.Point(357, 117);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(195, 20);
-            this.txtUsername.TabIndex = 59;
+            this.txtUsername.TabIndex = 0;
             // 
             // lblUserID
             // 
@@ -344,15 +334,24 @@
             this.pictureBox12.TabIndex = 40;
             this.pictureBox12.TabStop = false;
             // 
-            // pictureBox11
+            // pbSave
             // 
-            this.pictureBox11.Image = global::DVLD_Project.Properties.Resources.save_disk;
-            this.pictureBox11.Location = new System.Drawing.Point(621, 586);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 39;
-            this.pictureBox11.TabStop = false;
+            this.pbSave.Image = global::DVLD_Project.Properties.Resources.save_disk;
+            this.pbSave.Location = new System.Drawing.Point(621, 586);
+            this.pbSave.Name = "pbSave";
+            this.pbSave.Size = new System.Drawing.Size(36, 36);
+            this.pbSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSave.TabIndex = 39;
+            this.pbSave.TabStop = false;
+            // 
+            // ctrlPersonCardWithFilter1
+            // 
+            this.ctrlPersonCardWithFilter1.FilterEnabled = true;
+            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(3, 6);
+            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
+            this.ctrlPersonCardWithFilter1.ShowAddPerson = true;
+            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(793, 440);
+            this.ctrlPersonCardWithFilter1.TabIndex = 0;
             // 
             // frmAddUpdateUser
             // 
@@ -363,7 +362,7 @@
             this.ClientSize = new System.Drawing.Size(839, 637);
             this.Controls.Add(this.tcUserInfo);
             this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pbSave);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblTitle);
@@ -372,6 +371,7 @@
             this.Name = "frmAddUpdateUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add/Update User";
+            this.Activated += new System.EventHandler(this.frmAddUpdateUser_Activated);
             this.Load += new System.EventHandler(this.frmAddUpdateUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.tcUserInfo.ResumeLayout(false);
@@ -385,7 +385,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSave)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,7 +397,7 @@
         private MaterialSkin.Controls.MaterialButton btnPersonInfoNext;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pbSave;
         private MaterialSkin.Controls.MaterialButton btnClose;
         private MaterialSkin.Controls.MaterialButton btnSave;
         private System.Windows.Forms.ErrorProvider errorProvider1;

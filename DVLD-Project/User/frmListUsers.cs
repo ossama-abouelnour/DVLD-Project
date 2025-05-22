@@ -160,13 +160,17 @@ namespace DVLD_Project.User
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (clsUser.DeleteUser((int)dgvUsers.CurrentRow.Cells[0].Value))
+            if (MessageBox.Show("Are you sure you want to delete this user?", "Confirm Deletion", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
             {
-                MessageBox.Show("User has been deleted successfully", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                frmListUsers_Load(null, null);
+                if (clsUser.DeleteUser((int)dgvUsers.CurrentRow.Cells[0].Value))
+                {
+                    MessageBox.Show("User has been deleted successfully", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmListUsers_Load(null, null);
+                }
+                else
+                    MessageBox.Show("User is not deleted.", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-                MessageBox.Show("User is not deleted.", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
 
         }
 

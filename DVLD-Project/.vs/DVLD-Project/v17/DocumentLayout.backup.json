@@ -3,35 +3,20 @@
   "WorkspaceRootPath": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\people\\controls\\ctrlpersoncard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:people\\controls\\ctrlpersoncard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\user\\frmlistusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:user\\frmlistusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D27A41D-01B6-4B59-93E2-4FF4298A755B}|..\\DVLD_Business\\DVLD_Business.csproj|d:\\repos\\github\\dvld-project\\dvld_business\\clscountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\user\\frmlistusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:user\\frmlistusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D27A41D-01B6-4B59-93E2-4FF4298A755B}|..\\DVLD_Business\\DVLD_Business.csproj|d:\\repos\\github\\dvld-project\\dvld_business\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\user\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:user\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEB1290B-021E-4694-80F9-F4DD0A359525}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|d:\\repos\\github\\dvld-project\\dvld_dataaccess\\clspersondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\people\\controls\\ctrlpersoncardwithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:people\\controls\\ctrlpersoncardwithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D27A41D-01B6-4B59-93E2-4FF4298A755B}|..\\DVLD_Business\\DVLD_Business.csproj|d:\\repos\\github\\dvld-project\\dvld_business\\clsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\people\\controls\\ctrlpersoncardwithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:people\\controls\\ctrlpersoncardwithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D27A41D-01B6-4B59-93E2-4FF4298A755B}|..\\DVLD_Business\\DVLD_Business.csproj|d:\\repos\\github\\dvld-project\\dvld_business\\clsapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\user\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:user\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,119 +34,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "clsPersonData.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsPersonData.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsPersonData.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsPersonData.cs",
-              "RelativeToolTip": "..\\DVLD_DataAccess\\clsPersonData.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAswHoAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmListUsers.cs [Design]",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\User\\frmListUsers.cs",
+              "RelativeDocumentMoniker": "User\\frmListUsers.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\User\\frmListUsers.cs [Design]",
+              "RelativeToolTip": "User\\frmListUsers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:34:34.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ctrlPersonCardWithFilter.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\People\\Controls\\ctrlPersonCardWithFilter.cs",
-              "RelativeDocumentMoniker": "People\\Controls\\ctrlPersonCardWithFilter.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\People\\Controls\\ctrlPersonCardWithFilter.cs",
-              "RelativeToolTip": "People\\Controls\\ctrlPersonCardWithFilter.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAuwFMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:26:48.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ctrlPersonCardWithFilter.cs [Design]",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\People\\Controls\\ctrlPersonCardWithFilter.cs",
-              "RelativeDocumentMoniker": "People\\Controls\\ctrlPersonCardWithFilter.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\People\\Controls\\ctrlPersonCardWithFilter.cs [Design]",
-              "RelativeToolTip": "People\\Controls\\ctrlPersonCardWithFilter.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:26:39.392Z",
+              "WhenOpened": "2025-05-22T13:22:57.202Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "clsApplication.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsApplication.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsApplication.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsApplication.cs",
-              "RelativeToolTip": "..\\DVLD_Business\\clsApplication.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAvwIUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:22:26.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "clsUser.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsUser.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsUser.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsUser.cs",
-              "RelativeToolTip": "..\\DVLD_Business\\clsUser.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAtwCMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:21:56.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsCountry.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsCountry.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsCountry.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsCountry.cs",
-              "RelativeToolTip": "..\\DVLD_Business\\clsCountry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:13:51.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ctrlPersonCard.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\People\\Controls\\ctrlPersonCard.cs",
-              "RelativeDocumentMoniker": "People\\Controls\\ctrlPersonCard.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\People\\Controls\\ctrlPersonCard.cs",
-              "RelativeToolTip": "People\\Controls\\ctrlPersonCard.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAAwEUAAAAMAAAAAAAAAA==",
+              "Title": "frmListUsers.cs",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\User\\frmListUsers.cs",
+              "RelativeDocumentMoniker": "User\\frmListUsers.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\User\\frmListUsers.cs",
+              "RelativeToolTip": "User\\frmListUsers.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAEwKYAAACHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:12:08.168Z",
+              "WhenOpened": "2025-05-22T13:09:34.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs",
-              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs",
-              "RelativeToolTip": "Login\\frmLogin.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAADwvxcAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "frmAddUpdateUser.cs",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\User\\frmAddUpdateUser.cs",
+              "RelativeDocumentMoniker": "User\\frmAddUpdateUser.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\User\\frmAddUpdateUser.cs",
+              "RelativeToolTip": "User\\frmAddUpdateUser.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAwwHkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:01:03.628Z",
+              "WhenOpened": "2025-05-22T11:29:51.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "clsPerson.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsPerson.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsPerson.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsPerson.cs",
-              "RelativeToolTip": "..\\DVLD_Business\\clsPerson.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAYwEYAAAAMAAAAAAAAAA==",
+              "Title": "frmAddUpdateUser.cs [Design]",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\User\\frmAddUpdateUser.cs",
+              "RelativeDocumentMoniker": "User\\frmAddUpdateUser.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\User\\frmAddUpdateUser.cs [Design]",
+              "RelativeToolTip": "User\\frmAddUpdateUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:00:39.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T11:29:48.535Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

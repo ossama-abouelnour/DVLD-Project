@@ -385,7 +385,7 @@
             this.llEditPersonInfo.Location = new System.Drawing.Point(697, 23);
             this.llEditPersonInfo.Name = "llEditPersonInfo";
             this.llEditPersonInfo.Size = new System.Drawing.Size(32, 13);
-            this.llEditPersonInfo.TabIndex = 34;
+            this.llEditPersonInfo.TabIndex = 0;
             this.llEditPersonInfo.TabStop = true;
             this.llEditPersonInfo.Text = "EDIT";
             this.llEditPersonInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llEditPersonInfo_LinkClicked_1);
