@@ -41,13 +41,13 @@ namespace DVLD_DataAccess
                 if (reader.Read())
                 {
                     isFound = true;
-                    ApplicantPersonID = (int)(reader["ApplicantPersonID"]);
+                    ApplicantPersonID = Convert.ToInt32(reader["ApplicantPersonID"]);
                     ApplicationDate = (DateTime)(reader["ApplicationDate"]);
-                    ApplicationTypeID = (int)(reader["ApplicationTypeID"]);
-                    ApplicationStatus = (byte)(reader["ApplicationStatus"]);
+                    ApplicationTypeID = Convert.ToInt32(reader["ApplicationTypeID"]);
+                    ApplicationStatus = Convert.ToByte(reader["ApplicationStatus"]);
                     LastStatusDate = (DateTime)(reader["LastStatusDate"]);
-                    PaidFees = (float)(reader["PaidFees"]);
-                    CreatedByUserID = (int)(reader["CreatedByUserID"]);
+                    PaidFees = Convert.ToSingle(reader["PaidFees"]);
+                    CreatedByUserID = Convert.ToInt32(reader["CreatedByUserID"]);
 
                 }
                 else

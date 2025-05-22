@@ -50,3 +50,5 @@ D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.Ap
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.Application_Types.frmEditApplicationType.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.TestTypes.frmListTestTypes.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.TestTypes.frmEditTestType.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.Local_Driving_License.frmAddUpdateLocalDrivingLicenseApplication.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD-Project.exe.config
