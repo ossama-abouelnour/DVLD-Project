@@ -3,13 +3,7 @@
   "WorkspaceRootPath": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D27A41D-01B6-4B59-93E2-4FF4298A755B}|..\\DVLD_Business\\DVLD_Business.csproj|d:\\repos\\github\\dvld-project\\dvld_business\\clslicenseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEB1290B-021E-4694-80F9-F4DD0A359525}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|d:\\repos\\github\\dvld-project\\dvld_dataaccess\\clslicenseclassdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\applications\\local driving license\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\applications\\local driving license\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:applications\\local driving license\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,45 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsLicenseClass.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsLicenseClass.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsLicenseClass.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsLicenseClass.cs",
-              "RelativeToolTip": "..\\DVLD_Business\\clsLicenseClass.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwCwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T21:50:55.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsLicenseClassData.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsLicenseClassData.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsLicenseClassData.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsLicenseClassData.cs",
-              "RelativeToolTip": "..\\DVLD_DataAccess\\clsLicenseClassData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T21:48:19.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "frmAddUpdateLocalDrivingLicenseApplication.cs",
               "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\Local Driving License\\frmAddUpdateLocalDrivingLicenseApplication.cs",
               "RelativeDocumentMoniker": "Applications\\Local Driving License\\frmAddUpdateLocalDrivingLicenseApplication.cs",
               "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\Local Driving License\\frmAddUpdateLocalDrivingLicenseApplication.cs",
               "RelativeToolTip": "Applications\\Local Driving License\\frmAddUpdateLocalDrivingLicenseApplication.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwEAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAApwDgAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T20:37:21.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmAddUpdateLocalDrivingLicenseApplication.cs [Design]",
               "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\Local Driving License\\frmAddUpdateLocalDrivingLicenseApplication.cs",
               "RelativeDocumentMoniker": "Applications\\Local Driving License\\frmAddUpdateLocalDrivingLicenseApplication.cs",

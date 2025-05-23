@@ -116,6 +116,7 @@
             this.localLicenceToolStripMenuItem.Name = "localLicenceToolStripMenuItem";
             this.localLicenceToolStripMenuItem.Size = new System.Drawing.Size(307, 32);
             this.localLicenceToolStripMenuItem.Text = "Local Licence";
+            this.localLicenceToolStripMenuItem.Click += new System.EventHandler(this.localLicenceToolStripMenuItem_Click);
             // 
             // internationalLToolStripMenuItem
             // 
