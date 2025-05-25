@@ -20,7 +20,7 @@ namespace DVLD_Project.Applications.Local_Driving_License
 
         private int _LocalDrivingLicenseApplicationID = -1;
         private int _SelectedPersonID = -1;
-        clsLocalDrivingLincenseApplication _LocalDrivingLicenseApplication;
+        clsLocalDrivingLicenseApplication _LocalDrivingLicenseApplication;
 
         public frmAddUpdateLocalDrivingLicenseApplication()
         {
@@ -75,7 +75,7 @@ namespace DVLD_Project.Applications.Local_Driving_License
             
 
             ctrlPersonCardWithFilter1.FilterEnabled = false;
-            _LocalDrivingLicenseApplication = clsLocalDrivingLincenseApplication.FindByLocalDrivingAppLicenseID(_LocalDrivingLicenseApplicationID);
+            _LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(_LocalDrivingLicenseApplicationID);
             btnSave.Enabled = false;
             if (_LocalDrivingLicenseApplication == null )
             {
@@ -109,7 +109,7 @@ namespace DVLD_Project.Applications.Local_Driving_License
             if (_Mode == enMode.AddNew)
             {
                 lblTitle.Text = "New Local Driving License Application";
-                _LocalDrivingLicenseApplication = new clsLocalDrivingLincenseApplication();
+                _LocalDrivingLicenseApplication = new clsLocalDrivingLicenseApplication();
                 ctrlPersonCardWithFilter1.Focus();
                 tpApplicationInfo.Enabled = false;
 
