@@ -427,5 +427,8 @@
   <ItemGroup>
     <None Include="Icons\MyIcons\Add Application.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\MyIcons\eye.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

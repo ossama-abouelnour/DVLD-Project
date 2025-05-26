@@ -195,5 +195,10 @@ namespace DVLD_Business
             return 3;
         }
 
+        public bool DoesLicenseExist()
+        {
+            return (GetActiveLicenseID() != -1);
+        }
+
     }
 }

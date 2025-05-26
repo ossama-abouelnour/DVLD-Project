@@ -28,7 +28,7 @@ namespace DVLD_Project.Applications.Local_Driving_License
             _Mode = enMode.AddNew;
         }
 
-        private frmAddUpdateLocalDrivingLicenseApplication(int LocalDrivingLicenseApplicationID)
+        public frmAddUpdateLocalDrivingLicenseApplication(int LocalDrivingLicenseApplicationID)
         {
             InitializeComponent();
             _LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
