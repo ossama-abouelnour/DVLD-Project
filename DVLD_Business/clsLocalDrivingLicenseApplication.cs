@@ -16,7 +16,7 @@ namespace DVLD_Business
 
         public int LicenseClassID { get; set; }
 
-        // public clsLicenseClass { get; set; }
+        public clsLicenseClass LicenseClassInfo { get; set; }
 
         public string FullName
         {
