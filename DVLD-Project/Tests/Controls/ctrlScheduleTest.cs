@@ -2,10 +2,12 @@
 using DVLD_Project.Global_Classes;
 using DVLD_Project.Properties;
 using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace DVLD_Project.Tests.Controls
 {
+    [ToolboxItem(true)]
     public partial class ctrlScheduleTest : UserControl
     {
         public enum enMode {AddNew =0, Update =1};
