@@ -1,4 +1,5 @@
 ﻿using DVLD_Business;
+using DVLD_Project.Tests;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -192,6 +193,29 @@ namespace DVLD_Project.Applications.Local_Driving_License
             frmAddUpdateLocalDrivingLicenseApplication frm = new frmAddUpdateLocalDrivingLicenseApplication();
             frm.ShowDialog();
             frmListLocalDrivingLicenseApplications_Load(null, null);
+        }
+
+        private void _ScheduleTest(clsTestType.enTestType TestType)
+        {
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
+            frmListTestAppointments frm = new frmListTestAppointments(LocalDrivingLicenseApplicationID, TestType);
+            frm.ShowDialog();
+            frmListLocalDrivingLicenseApplications_Load(null, null);
+        }
+
+        private void scheduleEyeTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _ScheduleTest(clsTestType.enTestType.EyeTest);
+        }
+
+        private void scheduleTheoryTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _ScheduleTest(clsTestType.enTestType.TheoryTest);
+        }
+
+        private void scheduleDrivingTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _ScheduleTest(clsTestType.enTestType.DrivingTest);
         }
     }
 }
