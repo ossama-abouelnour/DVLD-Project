@@ -22,7 +22,7 @@ namespace DVLD_Business
         {
             get
             {
-                return base.PersonInfo.FullName;
+                return clsPerson.Find(ApplicantPersonID).FullName;
             }
         }
 
@@ -34,12 +34,13 @@ namespace DVLD_Business
 
         }
 
-        private clsLocalDrivingLicenseApplication(int LocalDrivingLicenseApplicationID, int ApplicationID,
+        private clsLocalDrivingLicenseApplication(int LocalDrivingLicenseApplicationID, int ApplicationID, int ApplicantPersonID,
             DateTime ApplicationDate, int applicationTypeID, enApplicationStatus applicationStatus,
             DateTime lastStatusDate, float paidFees, int createdByUserID, int LicenseClassID)
         {
             this.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
             this.ApplicationID = ApplicationID;
+            this.ApplicantPersonID = ApplicantPersonID;
             this.ApplicationDate = ApplicationDate;
             this.ApplicationTypeID = applicationTypeID;
             this.ApplicationStatus = applicationStatus;
@@ -47,7 +48,7 @@ namespace DVLD_Business
             this.PaidFees = paidFees;
             this.CreatedByUserID = createdByUserID;
             this.LicenseClassID = LicenseClassID;
-            //this.LicenseClassInfo = clsLicenseClass.Find(LicenseClassID);
+            this.LicenseClassInfo = clsLicenseClass.Find(LicenseClassID);
             Mode = enMode.Update;
         }
 
@@ -64,10 +65,13 @@ namespace DVLD_Business
         {
             int ApplicationID = -1, LicenseID = -1;
 
-            if (clsLocalDrivingLincenseApplicationData.GetLocalDrivingLicenseApplicationInfoByID(LocalDrivingLicenseApplicationID, ref ApplicationID, ref LicenseID))
+            bool isFound = clsLocalDrivingLincenseApplicationData.GetLocalDrivingLicenseApplicationInfoByID(LocalDrivingLicenseApplicationID, ref ApplicationID, ref LicenseID);
+
+            if (isFound)
             {
                 clsApplication Application = clsApplication.FindBaseApplication(ApplicationID);
-                return new clsLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID, Application.ApplicationID,
+
+                return new clsLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID, Application.ApplicationID, Application.ApplicantPersonID,
                     Application.ApplicationDate, Application.ApplicationTypeID, Application.ApplicationStatus, Application.LastStatusDate,
                     Application.PaidFees, Application.CreatedByUserID, LicenseID);
             }
@@ -78,10 +82,12 @@ namespace DVLD_Business
         {
             int LocalDrivingLicenseApplicationID = -1, LicenseID = -1;
 
-            if (clsLocalDrivingLincenseApplicationData.GetLocalDrivingLicenseApplicationInfoByApplicationID(ApplicationID, ref LocalDrivingLicenseApplicationID, ref LicenseID))
+            bool isFound = clsLocalDrivingLincenseApplicationData.GetLocalDrivingLicenseApplicationInfoByApplicationID(ApplicationID, ref LocalDrivingLicenseApplicationID, ref LicenseID);
+
+            if (isFound)
             {
                 clsApplication Application = clsApplication.FindBaseApplication(ApplicationID);
-                return new clsLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID, Application.ApplicationID, Application.ApplicationDate,
+                return new clsLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID, Application.ApplicationID, Application.ApplicantPersonID, Application.ApplicationDate,
                     Application.ApplicationTypeID, Application.ApplicationStatus, Application.LastStatusDate, Application.PaidFees, Application.CreatedByUserID, LicenseID);
             }
             else
@@ -198,6 +204,11 @@ namespace DVLD_Business
         public bool DoesLicenseExist()
         {
             return (GetActiveLicenseID() != -1);
+        }
+
+        public clsTest GetLastTestPerTestType(clsTestType.enTestType TestTypeID)
+        {
+            return clsTest.FindLastTestPerPersonAndLicenseClass(this.ApplicantPersonID, this.LicenseClassID, TestTypeID);
         }
 
     }

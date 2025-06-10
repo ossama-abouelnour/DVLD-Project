@@ -76,8 +76,8 @@ namespace DVLD_Project.Tests
                 return;
             }
 
-            //clsTest LastTest = LocalDrivingLicenseApplication.GetLastTestPerTestType(_TestType);
-            //if (LastTest == null)
+            clsTest LastTest = LocalDrivingLicenseApplication.GetLastTestPerTestType(_TestType);
+            if (LastTest == null)
             {
                 frmScheduleTest frm1 = new frmScheduleTest(_LocalDrivingLicenseApplicationID, _TestType);
                 frm1.ShowDialog();
@@ -85,15 +85,15 @@ namespace DVLD_Project.Tests
                 return;
             }
 
-            //if (LastTest.TestResult == true)
+            if (LastTest.TestResult == true)
             {
-                //MessageBox.Show("This person already passed this test before", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //return;
+                MessageBox.Show("This person already passed this test before", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
-            //frmScheduleTest frm2 = new frmScheduleTest(LastTest.TestAppointmentInfo.LocalDrivingLicenseApplicationID, _TestType);
-            //frm2.ShowDialog();
-            //frmListTestAppointments_Load(null, null);
+            frmScheduleTest frm2 = new frmScheduleTest(LastTest.TestAppointmentInfo.LocalDrivingLicenseApplicationID, _TestType);
+            frm2.ShowDialog();
+            frmListTestAppointments_Load(null, null);
 
         }
 
@@ -110,9 +110,9 @@ namespace DVLD_Project.Tests
         {
             int TestAppointmentID = (int)dgvAppointments.CurrentRow.Cells[0].Value;
 
-            //frmTakeTest frm = new frmTakeTest(TestAppointmentID, _TestType);
-            //frm.ShowDialog();
-            //frmListTestAppointments_Load(null, null);
+            frmTakeTest frm = new frmTakeTest(TestAppointmentID, _TestType);
+            frm.ShowDialog();
+            frmListTestAppointments_Load(null, null);
         }
     }
 }

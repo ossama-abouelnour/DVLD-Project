@@ -87,8 +87,8 @@ namespace DVLD_DataAccess
 
                     isFound = true;
 
-                    LocalDrivingLicenseApplicationID = (int)reader["LocalDrivingLicenseApplicationID"];
-                    LicenseClassID = (int)reader["LicenseClassID"];
+                    LocalDrivingLicenseApplicationID = Convert.ToInt32(reader["LocalDrivingLicenseApplicationID"]);
+                    LicenseClassID = Convert.ToInt32(reader["LicenseClassID"]);
 
                 }
                 else

@@ -29,17 +29,17 @@ namespace DVLD_DataAccess
                 {
                     isFound = true;
 
-                    FirstName = (string)reader["FirstName"];
-                    MiddleName = (string)reader["MiddleName"];
-                    LastName = (string)reader["LastName"];
-                    NationalNo = (string)reader["NationalNo"];
+                    FirstName = Convert.ToString(reader["FirstName"]);
+                    MiddleName = Convert.ToString(reader["MiddleName"]);
+                    LastName = Convert.ToString(reader["LastName"]);
+                    NationalNo = Convert.ToString(reader["NationalNo"]);
                     DateOfBirth = (DateTime)reader["DateOfBirth"];
                     Gender = Convert.ToInt16(reader["Gender"]);
-                    Address = (string)reader["Address"];
-                    Phone = (string)reader["Phone"];
+                    Address = Convert.ToString(reader["Address"]);
+                    Phone = Convert.ToString(reader["Phone"]);
                     if (reader["Email"] != DBNull.Value)
                     {
-                        Email = (string)reader["Email"];
+                        Email = Convert.ToString(reader["Email"]);
                     }
                     else
                     {
@@ -50,7 +50,7 @@ namespace DVLD_DataAccess
 
                     if (reader["ImagePath"] != DBNull.Value)
                     {
-                        ImagePath = (string)reader["ImagePath"];
+                        ImagePath = Convert.ToString(reader["ImagePath"]);
                     }
 
                     else 

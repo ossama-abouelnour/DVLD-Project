@@ -77,8 +77,11 @@ D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.People.frmAddUp
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.People.frmFindPerson.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.People.frmListPeople.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Properties.Resources.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.Controls.ctrlScheduledTest.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.Controls.ctrlScheduleTest.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.frmListTestAppointments.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.frmScheduleTest.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.frmTakeTest.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.TestTypes.frmEditTestType.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.TestTypes.frmListTestTypes.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.User.ctrlUserCard.resources
@@ -92,4 +95,3 @@ D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD-Pro.F4A91A91.Up2Date
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD-Project.exe
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD-Project.pdb
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD-Project.exe.config
-D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Tests.frmListTestAppointments.resources

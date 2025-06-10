@@ -29,23 +29,26 @@ namespace DVLD_Project.Applications.Local_Driving_License
 
             if (dgvLocalDrivingLicenseApplications.Rows.Count > 0)
             {
-                dgvLocalDrivingLicenseApplications.Columns[0].HeaderText = "Local DL App ID";
+                dgvLocalDrivingLicenseApplications.Columns[0].HeaderText = "Application ID";
                 dgvLocalDrivingLicenseApplications.Columns[0].Width = 120;
 
-                dgvLocalDrivingLicenseApplications.Columns[1].HeaderText = "Driving Class";
-                dgvLocalDrivingLicenseApplications.Columns[1].Width = 300;
+                dgvLocalDrivingLicenseApplications.Columns[1].HeaderText = "Local DL App ID";
+                dgvLocalDrivingLicenseApplications.Columns[1].Width = 120;
 
-                dgvLocalDrivingLicenseApplications.Columns[2].HeaderText = "National No.";
-                dgvLocalDrivingLicenseApplications.Columns[2].Width = 150;
+                dgvLocalDrivingLicenseApplications.Columns[2].HeaderText = "Driving Class";
+                dgvLocalDrivingLicenseApplications.Columns[2].Width = 300;
 
-                dgvLocalDrivingLicenseApplications.Columns[3].HeaderText = "Full Name";
-                dgvLocalDrivingLicenseApplications.Columns[3].Width = 350;
+                dgvLocalDrivingLicenseApplications.Columns[3].HeaderText = "National No.";
+                dgvLocalDrivingLicenseApplications.Columns[3].Width = 150;
 
-                dgvLocalDrivingLicenseApplications.Columns[4].HeaderText = "Application Date";
-                dgvLocalDrivingLicenseApplications.Columns[4].Width = 170;
+                dgvLocalDrivingLicenseApplications.Columns[4].HeaderText = "Full Name";
+                dgvLocalDrivingLicenseApplications.Columns[4].Width = 350;
 
-                dgvLocalDrivingLicenseApplications.Columns[5].HeaderText = "Passed Tests";
-                dgvLocalDrivingLicenseApplications.Columns[5].Width = 150;
+                dgvLocalDrivingLicenseApplications.Columns[5].HeaderText = "Application Date";
+                dgvLocalDrivingLicenseApplications.Columns[5].Width = 170;
+
+                dgvLocalDrivingLicenseApplications.Columns[6].HeaderText = "Passed Tests";
+                dgvLocalDrivingLicenseApplications.Columns[6].Width = 150;
             }
 
             cbFilterBy.SelectedIndex = 0;
@@ -99,7 +102,7 @@ namespace DVLD_Project.Applications.Local_Driving_License
 
         private void editApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAddUpdateLocalDrivingLicenseApplication frm = new frmAddUpdateLocalDrivingLicenseApplication((int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value);
+            frmAddUpdateLocalDrivingLicenseApplication frm = new frmAddUpdateLocalDrivingLicenseApplication((int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[1].Value);
             frm.ShowDialog();
             frmListLocalDrivingLicenseApplications_Load(null, null);
         }
@@ -146,11 +149,11 @@ namespace DVLD_Project.Applications.Local_Driving_License
 
         private void cmsApplications_Opening(object sender, CancelEventArgs e)
         {
-            int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[1].Value;
 
             clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
 
-            int TotalTestsPassed = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[5].Value;
+            int TotalTestsPassed = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[6].Value;
 
             bool LicenseExists = LocalDrivingLicenseApplication.DoesLicenseExist();
 
