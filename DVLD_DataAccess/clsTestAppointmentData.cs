@@ -205,6 +205,7 @@ namespace DVLD_DataAccess
 
             string query = @"Insert Into TestAppointments (TestTypeID,LocalDrivingLicenseApplicationID,AppointmentDate,PaidFees,CreatedByUserID,IsLocked,RetakeTestApplicationID)
                             Values (@TestTypeID,@LocalDrivingLicenseApplicationID,@AppointmentDate,@PaidFees,@CreatedByUserID,0,@RetakeTestApplicationID);
+                
                             SELECT SCOPE_IDENTITY();";
 
             SqlCommand command = new SqlCommand(query, connection);
@@ -215,6 +216,12 @@ namespace DVLD_DataAccess
             command.Parameters.AddWithValue("@AppointmentDate", AppointmentDate);
             command.Parameters.AddWithValue("@PaidFees", PaidFees);
             command.Parameters.AddWithValue("@CreatedByUserID", CreatedByUserID);
+
+            if (RetakeTestApplicationID == -1)
+
+                command.Parameters.AddWithValue("@RetakeTestApplicationID", DBNull.Value);
+            else
+                command.Parameters.AddWithValue("@RetakeTestApplicationID", RetakeTestApplicationID);
 
             try
             {

@@ -200,7 +200,7 @@ namespace DVLD_Project.Applications.Local_Driving_License
 
         private void _ScheduleTest(clsTestType.enTestType TestType)
         {
-            int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
+            int LocalDrivingLicenseApplicationID = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[1].Value;
             frmListTestAppointments frm = new frmListTestAppointments(LocalDrivingLicenseApplicationID, TestType);
             frm.ShowDialog();
             frmListLocalDrivingLicenseApplications_Load(null, null);
