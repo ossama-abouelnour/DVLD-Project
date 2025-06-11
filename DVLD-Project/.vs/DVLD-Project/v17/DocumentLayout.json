@@ -3,10 +3,7 @@
   "WorkspaceRootPath": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D27A41D-01B6-4B59-93E2-4FF4298A755B}|..\\DVLD_Business\\DVLD_Business.csproj|d:\\repos\\github\\dvld-project\\dvld_business\\clslicenseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEB1290B-021E-4694-80F9-F4DD0A359525}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|d:\\repos\\github\\dvld-project\\dvld_dataaccess\\clslicenseclassdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D27A41D-01B6-4B59-93E2-4FF4298A755B}|..\\DVLD_Business\\DVLD_Business.csproj|d:\\repos\\github\\dvld-project\\dvld_business\\clslicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,27 +18,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsLicenseClass.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsLicenseClass.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsLicenseClass.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsLicenseClass.cs",
-              "RelativeToolTip": "..\\DVLD_Business\\clsLicenseClass.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "clsLicense.cs",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsLicense.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsLicense.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsLicense.cs",
+              "RelativeToolTip": "..\\DVLD_Business\\clsLicense.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwKgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T20:08:00.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsLicenseClassData.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsLicenseClassData.cs",
-              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsLicenseClassData.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsLicenseClassData.cs",
-              "RelativeToolTip": "..\\DVLD_DataAccess\\clsLicenseClassData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALcAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T20:07:16.018Z",
+              "WhenOpened": "2025-06-11T20:24:53.03Z",
               "EditorCaption": ""
             },
             {
