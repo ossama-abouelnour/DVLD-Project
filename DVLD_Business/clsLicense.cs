@@ -29,15 +29,17 @@ namespace DVLD_Business
         public float PaidFees { set; get; }
         public bool IsActive { set; get; }
         public enIssueReason IssueReason { set; get; }
-        //public string IssueReasonText
-        //{
-        //    get
-        //    {
-        //        return GetIssueReasonText(this.IssueReason);
-        //    }
-        //}
+        public string IssueReasonText
+        {
+            get
+            {
+                return GetIssueReasonText(this.IssueReason);
+            }
+        }
+
         //public clsDetainedLicense DetainedInfo { set; get; }
         public int CreatedByUserID { set; get; }
+
         //public bool IsRevoked
         //{
         //    get { return clsDetainedLicense.IsLicenseDetained(this.LicenseID); }
@@ -95,12 +97,8 @@ namespace DVLD_Business
             return clsLicenseData.GetActiveLicenseIDByPersonID(PersonID, LicenseClassID);
         }
 
-
-
         private bool _AddNewLicense()
         {
-            //call DataAccess Layer 
-
             this.LicenseID = clsLicenseData.AddNewLicense(this.ApplicationID, this.DriverID, this.LicenseClass,
                this.IssueDate, this.ExpirationDate, this.Notes, this.PaidFees,
                this.IsActive, (byte)this.IssueReason, this.CreatedByUserID);
@@ -111,8 +109,6 @@ namespace DVLD_Business
 
         private bool _UpdateLicense()
         {
-            //call DataAccess Layer 
-
             return clsLicenseData.UpdateLicense(this.ApplicationID, this.LicenseID, this.DriverID, this.LicenseClass,
                this.IssueDate, this.ExpirationDate, this.Notes, this.PaidFees,
                this.IsActive, (byte)this.IssueReason, this.CreatedByUserID);

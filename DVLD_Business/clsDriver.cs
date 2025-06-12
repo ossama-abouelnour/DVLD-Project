@@ -81,7 +81,7 @@ namespace DVLD_Business
         {
             return clsDriverData.UpdateDriver(this.DriverID, this.PersonID, this.CreatedByUserID);
         }
-        private bool Save()
+        public bool Save()
         {
             switch(Mode)
             {
