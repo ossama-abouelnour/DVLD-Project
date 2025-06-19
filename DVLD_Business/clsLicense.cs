@@ -37,13 +37,13 @@ namespace DVLD_Business
             }
         }
 
-        //public clsDetainedLicense DetainedInfo { set; get; }
+        //public clsRevokedLicense RevokedInfo { set; get; }
         public int CreatedByUserID { set; get; }
 
-        //public bool IsRevoked
-        //{
-        //    get { return clsDetainedLicense.IsLicenseDetained(this.LicenseID); }
-        //}
+        public bool IsRevoked
+        {
+            get { return clsRevokedLicense.IsRevoked(this.LicenseID); }
+        }
 
 
         public clsLicense()
@@ -289,54 +289,54 @@ namespace DVLD_Business
             return NewLicense;
         }
 
-        //public clsLicense Replace(enIssueReason IssueReason, int CreatedByUserID)
-        //{
+        public clsLicense Replace(enIssueReason IssueReason, int CreatedByUserID)
+        {
 
 
-        //    //First Create Applicaiton 
-        //    clsApplication Application = new clsApplication();
+            //First Create Applicaiton 
+            clsApplication Application = new clsApplication();
 
-        //    Application.ApplicantPersonID = this.DriverInfo.PersonID;
-        //    Application.ApplicationDate = DateTime.Now;
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
 
-        //    Application.ApplicationTypeID = (IssueReason == enIssueReason.DamagedReplacement) ?
-        //        (int)clsApplication.enApplicationType.ReplaceDamagedDrivingLicense :
-        //        (int)clsApplication.enApplicationType.ReplaceLostDrivingLicense;
+            Application.ApplicationTypeID = (IssueReason == enIssueReason.Damaged) ?
+                (int)clsApplication.enApplicationType.ReplaceDamagedDrivingLicence :
+                (int)clsApplication.enApplicationType.ReplaceLostDrivingLicence;
 
-        //    Application.ApplicationStatus = clsApplication.enApplicationStatus.Completed;
-        //    Application.LastStatusDate = DateTime.Now;
-        //    Application.PaidFees = clsApplicationType.Find(Application.ApplicationTypeID).Fees;
-        //    Application.CreatedByUserID = CreatedByUserID;
+            Application.ApplicationStatus = clsApplication.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = clsApplicationType.Find(Application.ApplicationTypeID).Fee;
+            Application.CreatedByUserID = CreatedByUserID;
 
-        //    if (!Application.Save())
-        //    {
-        //        return null;
-        //    }
+            if (!Application.Save())
+            {
+                return null;
+            }
 
-        //    clsLicense NewLicense = new clsLicense();
+            clsLicense NewLicense = new clsLicense();
 
-        //    NewLicense.ApplicationID = Application.ApplicationID;
-        //    NewLicense.DriverID = this.DriverID;
-        //    NewLicense.LicenseClass = this.LicenseClass;
-        //    NewLicense.IssueDate = DateTime.Now;
-        //    NewLicense.ExpirationDate = this.ExpirationDate;
-        //    NewLicense.Notes = this.Notes;
-        //    NewLicense.PaidFees = 0;// no fees for the license because it's a replacement.
-        //    NewLicense.IsActive = true;
-        //    NewLicense.IssueReason = IssueReason;
-        //    NewLicense.CreatedByUserID = CreatedByUserID;
+            NewLicense.ApplicationID = Application.ApplicationID;
+            NewLicense.DriverID = this.DriverID;
+            NewLicense.LicenseClass = this.LicenseClass;
+            NewLicense.IssueDate = DateTime.Now;
+            NewLicense.ExpirationDate = this.ExpirationDate;
+            NewLicense.Notes = this.Notes;
+            NewLicense.PaidFees = 0;
+            NewLicense.IsActive = true;
+            NewLicense.IssueReason = IssueReason;
+            NewLicense.CreatedByUserID = CreatedByUserID;
 
 
 
-        //    if (!NewLicense.Save())
-        //    {
-        //        return null;
-        //    }
+            if (!NewLicense.Save())
+            {
+                return null;
+            }
 
-        //    //we need to deactivate the old License.
-        //    DeactivateCurrentLicense();
+          
+            DeactivateCurrentLicense();
 
-        //    return NewLicense;
-        //}
+            return NewLicense;
+        }
     }
 }

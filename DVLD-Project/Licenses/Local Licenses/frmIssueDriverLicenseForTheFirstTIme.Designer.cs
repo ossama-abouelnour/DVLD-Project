@@ -77,7 +77,7 @@
             // pbSave
             // 
             this.pbSave.Image = global::DVLD_Project.Properties.Resources.driving_license;
-            this.pbSave.Location = new System.Drawing.Point(649, 660);
+            this.pbSave.Location = new System.Drawing.Point(579, 660);
             this.pbSave.Name = "pbSave";
             this.pbSave.Size = new System.Drawing.Size(36, 36);
             this.pbSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -112,12 +112,12 @@
             this.btnIssue.Depth = 0;
             this.btnIssue.HighEmphasis = true;
             this.btnIssue.Icon = null;
-            this.btnIssue.Location = new System.Drawing.Point(681, 660);
+            this.btnIssue.Location = new System.Drawing.Point(622, 660);
             this.btnIssue.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnIssue.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnIssue.Name = "btnIssue";
             this.btnIssue.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnIssue.Size = new System.Drawing.Size(64, 36);
+            this.btnIssue.Size = new System.Drawing.Size(123, 36);
             this.btnIssue.TabIndex = 45;
             this.btnIssue.Text = "Issue License";
             this.btnIssue.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;

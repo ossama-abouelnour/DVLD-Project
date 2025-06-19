@@ -62,7 +62,7 @@ namespace DVLD_Project.People.Controls
             lblGender.Text = _Person.Gender == 0 ? "Male" : "Female";
             lblEmail.Text = _Person.Email;
             lblAddress.Text = _Person.Address;
-            lblDateOfBirth.Text = _Person.DateOfBirth.ToString();
+            lblDateOfBirth.Text = _Person.DateOfBirth.ToShortDateString();
             lblPhone.Text = _Person.Phone;
 
             var Country = clsCountry.Find(_Person.NationalityCountryID).CountryName;

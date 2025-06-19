@@ -1,6 +1,9 @@
 ﻿using DVLD_Business;
 using DVLD_Project.Applications.Application_Types;
 using DVLD_Project.Applications.Local_Driving_License;
+using DVLD_Project.Applications.Renew_Local_License;
+using DVLD_Project.Applications.Replace_Lost_or_Damaged_License;
+using DVLD_Project.Drivers;
 using DVLD_Project.Global_Classes;
 using DVLD_Project.Login;
 using DVLD_Project.People;
@@ -86,6 +89,24 @@ namespace DVLD_Project
         private void localDrivingLicenceApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListLocalDrivingLicenseApplications frm = new frmListLocalDrivingLicenseApplications();
+            frm.ShowDialog();
+        }
+
+        private void renewDrivingLicenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRenewLocalDrivingLicenseApplication frm = new frmRenewLocalDrivingLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void lostOrReplacementLicenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReplaceLostOrDamagedLicense frm = new frmReplaceLostOrDamagedLicense();
+            frm.ShowDialog();
+        }
+
+        private void driversToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListDrivers frm = new frmListDrivers();
             frm.ShowDialog();
         }
     }

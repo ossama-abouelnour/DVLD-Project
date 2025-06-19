@@ -170,7 +170,7 @@
             // 
             this.scheduleEyeTestToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.eye;
             this.scheduleEyeTestToolStripMenuItem.Name = "scheduleEyeTestToolStripMenuItem";
-            this.scheduleEyeTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.scheduleEyeTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.scheduleEyeTestToolStripMenuItem.Text = "Eye Test";
             this.scheduleEyeTestToolStripMenuItem.Click += new System.EventHandler(this.scheduleEyeTestToolStripMenuItem_Click);
             // 
@@ -178,7 +178,7 @@
             // 
             this.scheduleTheoryTestToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.test1;
             this.scheduleTheoryTestToolStripMenuItem.Name = "scheduleTheoryTestToolStripMenuItem";
-            this.scheduleTheoryTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.scheduleTheoryTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.scheduleTheoryTestToolStripMenuItem.Text = "Theory Test";
             this.scheduleTheoryTestToolStripMenuItem.Click += new System.EventHandler(this.scheduleTheoryTestToolStripMenuItem_Click);
             // 
@@ -186,7 +186,7 @@
             // 
             this.scheduleDrivingTestToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.driving_license1;
             this.scheduleDrivingTestToolStripMenuItem.Name = "scheduleDrivingTestToolStripMenuItem";
-            this.scheduleDrivingTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.scheduleDrivingTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.scheduleDrivingTestToolStripMenuItem.Text = "Driving Test";
             this.scheduleDrivingTestToolStripMenuItem.Click += new System.EventHandler(this.scheduleDrivingTestToolStripMenuItem_Click);
             // 
@@ -195,12 +195,14 @@
             this.issueDrivingLicenseFirstTimeToolStripMenuItem.Name = "issueDrivingLicenseFirstTimeToolStripMenuItem";
             this.issueDrivingLicenseFirstTimeToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.issueDrivingLicenseFirstTimeToolStripMenuItem.Text = "Issue Driving License (First Time)";
+            this.issueDrivingLicenseFirstTimeToolStripMenuItem.Click += new System.EventHandler(this.issueDrivingLicenseFirstTimeToolStripMenuItem_Click);
             // 
             // showLicenseToolStripMenuItem
             // 
             this.showLicenseToolStripMenuItem.Name = "showLicenseToolStripMenuItem";
             this.showLicenseToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.showLicenseToolStripMenuItem.Text = "Show License";
+            this.showLicenseToolStripMenuItem.Click += new System.EventHandler(this.showLicenseToolStripMenuItem_Click);
             // 
             // showLicenseHistoryToolStripMenuItem
             // 
