@@ -103,3 +103,4 @@ D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.Re
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.Replace_Lost_or_Damaged_License.frmReplaceLostOrDamagedLicense.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Drivers.frmListDrivers.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Licenses.Controls.ctrlDriverLicensesHistory.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Licenses.frmShowLicenseHistory.resources

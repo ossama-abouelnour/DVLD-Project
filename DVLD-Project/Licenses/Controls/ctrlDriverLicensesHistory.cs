@@ -121,5 +121,17 @@ namespace DVLD_Project.Licenses.Controls
             _dtLocalLicenseHistory.Clear();
             _dtInternationalLicenseHistory.Clear();
         }
+
+        private void showLicenseInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowLicenseInfo frm = new frmShowLicenseInfo((int)dgvLocalLicensesHistory.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+        }
+
+        private void InternationalLicenseHistorytoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowLicenseInfo frm = new frmShowLicenseInfo((int)dgvInternationalLicensesHistory.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+        }
     }
 }

@@ -37,7 +37,7 @@ namespace DVLD_Business
             }
         }
 
-        //public clsRevokedLicense RevokedInfo { set; get; }
+        public clsRevokedLicense RevokedInfo { set; get; }
         public int CreatedByUserID { set; get; }
 
         public bool IsRevoked
@@ -82,7 +82,7 @@ namespace DVLD_Business
 
             this.DriverInfo = clsDriver.FindByDriverID(this.DriverID);
             this.LicenseClassIfo = clsLicenseClass.Find(this.LicenseClass);
-            //this.DetainedInfo = clsDetainedLicense.FindByLicenseID(this.LicenseID);
+            this.RevokedInfo = clsRevokedLicense.FindByLicenseID(this.LicenseID);
 
             Mode = enMode.Update;
         }
@@ -199,49 +199,49 @@ namespace DVLD_Business
             }
         }
 
-        //public int Revoke(float FineFees, int CreatedByUserID)
-        //{
-        //    clsDetainedLicense detainedLicense = new clsDetainedLicense();
-        //    detainedLicense.LicenseID = this.LicenseID;
-        //    detainedLicense.DetainDate = DateTime.Now;
-        //    detainedLicense.FineFees = Convert.ToSingle(FineFees);
-        //    detainedLicense.CreatedByUserID = CreatedByUserID;
+        public int Revoke(float FineFees, int CreatedByUserID)
+        {
+            clsRevokedLicense detainedLicense = new clsRevokedLicense();
+            detainedLicense.LicenseID = this.LicenseID;
+            detainedLicense.RevokeDate = DateTime.Now;
+            detainedLicense.FineFees = Convert.ToSingle(FineFees);
+            detainedLicense.CreatedByUserID = CreatedByUserID;
 
-        //    if (!detainedLicense.Save())
-        //    {
+            if (!detainedLicense.Save())
+            {
 
-        //        return -1;
-        //    }
+                return -1;
+            }
 
-        //    return detainedLicense.DetainID;
+            return detainedLicense.RevokeID;
 
-        //}
+        }
 
-        //public bool ReleaseRevokedLicense(int ReleasedByUserID, ref int ApplicationID)
-        //{
+        public bool ReleaseRevokedLicense(int ReleasedByUserID, ref int ApplicationID)
+        {
 
-        //    clsApplication Application = new clsApplication();
+            clsApplication Application = new clsApplication();
 
-        //    Application.ApplicantPersonID = this.DriverInfo.PersonID;
-        //    Application.ApplicationDate = DateTime.Now;
-        //    Application.ApplicationTypeID = (int)clsApplication.enApplicationType.ReleaseRevokedLicence;
-        //    Application.ApplicationStatus = clsApplication.enApplicationStatus.Completed;
-        //    Application.LastStatusDate = DateTime.Now;
-        //    Application.PaidFees = clsApplicationType.Find((int)clsApplication.enApplicationType.ReleaseRevokedLicence).Fee;
-        //    Application.CreatedByUserID = ReleasedByUserID;
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+            Application.ApplicationTypeID = (int)clsApplication.enApplicationType.ReleaseRevokedLicence;
+            Application.ApplicationStatus = clsApplication.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = clsApplicationType.Find((int)clsApplication.enApplicationType.ReleaseRevokedLicence).Fee;
+            Application.CreatedByUserID = ReleasedByUserID;
 
-        //    if (!Application.Save())
-        //    {
-        //        ApplicationID = -1;
-        //        return false;
-        //    }
+            if (!Application.Save())
+            {
+                ApplicationID = -1;
+                return false;
+            }
 
-        //    ApplicationID = Application.ApplicationID;
+            ApplicationID = Application.ApplicationID;
 
 
-        //    return this.DetainedInfo.ReleaseDetainedLicense(ReleasedByUserID, Application.ApplicationID);
+            return this.RevokedInfo.ReleaseDetainedLicense(ReleasedByUserID, Application.ApplicationID);
 
-        //}
+        }
 
         public clsLicense RenewLicense(string Notes, int CreatedByUserID)
         {

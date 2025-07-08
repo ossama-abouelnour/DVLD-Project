@@ -1,4 +1,5 @@
 ﻿using DVLD_Business;
+using DVLD_Project.Licenses;
 using DVLD_Project.People.Controls;
 using System;
 using System.Collections.Generic;
@@ -69,7 +70,8 @@ namespace DVLD_Project.Drivers
 
         private void showLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not Implemented Yet!");
+            frmShowLicenseHistory frm = new frmShowLicenseHistory((int)dgvDrivers.CurrentRow.Cells[1].Value);
+            frm.ShowDialog();
         }
 
         private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
