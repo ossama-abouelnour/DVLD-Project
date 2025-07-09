@@ -143,6 +143,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap black_circle_xmark3 {
+            get {
+                object obj = ResourceManager.GetObject("black-circle-xmark3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendar {
             get {
                 object obj = ResourceManager.GetObject("calendar", resourceCulture);
@@ -416,6 +426,16 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap paper1 {
             get {
                 object obj = ResourceManager.GetObject("paper1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Passed {
+            get {
+                object obj = ResourceManager.GetObject("Passed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

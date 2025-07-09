@@ -189,18 +189,21 @@
             this.manageRevokedLicenceToolStripMenuItem.Name = "manageRevokedLicenceToolStripMenuItem";
             this.manageRevokedLicenceToolStripMenuItem.Size = new System.Drawing.Size(360, 32);
             this.manageRevokedLicenceToolStripMenuItem.Text = "Manage Revoked Licence";
+            this.manageRevokedLicenceToolStripMenuItem.Click += new System.EventHandler(this.manageRevokedLicenceToolStripMenuItem_Click);
             // 
             // revokeLicenceToolStripMenuItem
             // 
             this.revokeLicenceToolStripMenuItem.Name = "revokeLicenceToolStripMenuItem";
             this.revokeLicenceToolStripMenuItem.Size = new System.Drawing.Size(360, 32);
             this.revokeLicenceToolStripMenuItem.Text = "Revoke Licence";
+            this.revokeLicenceToolStripMenuItem.Click += new System.EventHandler(this.revokeLicenceToolStripMenuItem_Click);
             // 
             // reinstateRevokedLicenceToolStripMenuItem
             // 
             this.reinstateRevokedLicenceToolStripMenuItem.Name = "reinstateRevokedLicenceToolStripMenuItem";
             this.reinstateRevokedLicenceToolStripMenuItem.Size = new System.Drawing.Size(360, 32);
             this.reinstateRevokedLicenceToolStripMenuItem.Text = "Reinstate Revoked Licence";
+            this.reinstateRevokedLicenceToolStripMenuItem.Click += new System.EventHandler(this.reinstateRevokedLicenceToolStripMenuItem_Click);
             // 
             // manageApplicationTypesToolStripMenuItem
             // 

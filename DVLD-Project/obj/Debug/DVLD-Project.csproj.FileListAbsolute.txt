@@ -104,3 +104,6 @@ D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.Re
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Drivers.frmListDrivers.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Licenses.Controls.ctrlDriverLicensesHistory.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Licenses.frmShowLicenseHistory.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Licenses.Revoke_License.frmRevokeLicenseApplication.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.ReleaseRevokedLicense.frmReleaseRevokedLicenseApplication.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.ReleaseRevokedLicense.frmListRevokedLicenses.resources

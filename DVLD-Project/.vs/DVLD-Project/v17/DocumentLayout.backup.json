@@ -3,12 +3,10 @@
   "WorkspaceRootPath": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\licenses\\revoke license\\frmrevokelicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:licenses\\revoke license\\frmrevokelicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D27A41D-01B6-4B59-93E2-4FF4298A755B}|..\\DVLD_Business\\DVLD_Business.csproj|d:\\repos\\github\\dvld-project\\dvld_business\\clsinternationallicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\licenses\\revoke license\\frmrevokelicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:licenses\\revoke license\\frmrevokelicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EEB1290B-021E-4694-80F9-F4DD0A359525}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|d:\\repos\\github\\dvld-project\\dvld_dataaccess\\clsinternationallicensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +25,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmRevokeLicenseApplication.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Licenses\\Revoke License\\frmRevokeLicenseApplication.cs",
-              "RelativeDocumentMoniker": "Licenses\\Revoke License\\frmRevokeLicenseApplication.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Licenses\\Revoke License\\frmRevokeLicenseApplication.cs",
-              "RelativeToolTip": "Licenses\\Revoke License\\frmRevokeLicenseApplication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAABPAAAAAAAAAA==",
+              "Title": "clsInternationalLicense.cs",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsInternationalLicense.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_Business\\clsInternationalLicense.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsInternationalLicense.cs",
+              "RelativeToolTip": "..\\DVLD_Business\\clsInternationalLicense.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T21:16:53.285Z",
+              "WhenOpened": "2025-07-09T21:39:08.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmRevokeLicenseApplication.cs [Design]",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Licenses\\Revoke License\\frmRevokeLicenseApplication.cs",
-              "RelativeDocumentMoniker": "Licenses\\Revoke License\\frmRevokeLicenseApplication.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Licenses\\Revoke License\\frmRevokeLicenseApplication.cs [Design]",
-              "RelativeToolTip": "Licenses\\Revoke License\\frmRevokeLicenseApplication.cs [Design]",
+              "Title": "clsInternationalLicenseData.cs",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsInternationalLicenseData.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsInternationalLicenseData.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsInternationalLicenseData.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsInternationalLicenseData.cs",
+              "ViewState": "AgIAACwBAAAAAAAAAAAswA8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T21:06:46.888Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-09T21:32:27.026Z",
+              "EditorCaption": ""
             }
           ]
         },

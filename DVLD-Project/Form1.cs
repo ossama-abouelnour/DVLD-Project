@@ -1,10 +1,12 @@
 ﻿using DVLD_Business;
 using DVLD_Project.Applications.Application_Types;
 using DVLD_Project.Applications.Local_Driving_License;
+using DVLD_Project.Applications.ReleaseRevokedLicense;
 using DVLD_Project.Applications.Renew_Local_License;
 using DVLD_Project.Applications.Replace_Lost_or_Damaged_License;
 using DVLD_Project.Drivers;
 using DVLD_Project.Global_Classes;
+using DVLD_Project.Licenses.Revoke_License;
 using DVLD_Project.Login;
 using DVLD_Project.People;
 using DVLD_Project.Tests.TestTypes;
@@ -107,6 +109,24 @@ namespace DVLD_Project
         private void driversToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListDrivers frm = new frmListDrivers();
+            frm.ShowDialog();
+        }
+
+        private void revokeLicenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRevokeLicenseApplication frm  = new frmRevokeLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void reinstateRevokedLicenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReleaseRevokedLicenseApplication frm = new frmReleaseRevokedLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void manageRevokedLicenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListRevokedLicenses frm = new frmListRevokedLicenses();
             frm.ShowDialog();
         }
     }
