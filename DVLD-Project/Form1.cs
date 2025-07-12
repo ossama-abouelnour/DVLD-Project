@@ -1,5 +1,6 @@
 ﻿using DVLD_Business;
 using DVLD_Project.Applications.Application_Types;
+using DVLD_Project.Applications.International_License;
 using DVLD_Project.Applications.Local_Driving_License;
 using DVLD_Project.Applications.ReleaseRevokedLicense;
 using DVLD_Project.Applications.Renew_Local_License;
@@ -127,6 +128,12 @@ namespace DVLD_Project
         private void manageRevokedLicenceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListRevokedLicenses frm = new frmListRevokedLicenses();
+            frm.ShowDialog();
+        }
+
+        private void internationalLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNewInternationalLicenseApplication frm = new frmNewInternationalLicenseApplication();
             frm.ShowDialog();
         }
     }
