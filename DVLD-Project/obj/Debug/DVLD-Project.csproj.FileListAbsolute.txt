@@ -108,3 +108,4 @@ D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Licenses.Revoke
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.ReleaseRevokedLicense.frmReleaseRevokedLicenseApplication.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.ReleaseRevokedLicense.frmListRevokedLicenses.resources
 D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.International_License.frmNewInternationalLicenseApplication.resources
+D:\repos\GitHub\DVLD-Project\DVLD-Project\obj\Debug\DVLD_Project.Applications.International_License.frmListInternationalLicenseApplications.resources

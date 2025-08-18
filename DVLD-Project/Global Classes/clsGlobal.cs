@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Win32;
 
 namespace DVLD_Project.Global_Classes
 {
@@ -16,35 +17,12 @@ namespace DVLD_Project.Global_Classes
 
         public static bool RememberUsernameAndPassword(string Username, string Password)
         {
-
+            string keyPath = @"HKEY_CURRENT_USER\SOFTWARE\DVLD";
             try
             {
-                //this will get the current project directory folder.
-                string currentDirectory = System.IO.Directory.GetCurrentDirectory();
-
-
-                // Define the path to the text file where you want to save the data
-                string filePath = currentDirectory + "\\data.txt";
-
-                //incase the username is empty, delete the file
-                if (Username == "" && File.Exists(filePath))
-                {
-                    File.Delete(filePath);
-                    return true;
-
-                }
-
-                // concatonate username and passwrod withe seperator.
-                string dataToSave = Username + "#//#" + Password;
-
-                // Create a StreamWriter to write to the file
-                using (StreamWriter writer = new StreamWriter(filePath))
-                {
-                    // Write the data to the file
-                    writer.WriteLine(dataToSave);
-
-                    return true;
-                }
+                Registry.SetValue(keyPath, "Username", Username);
+                Registry.SetValue(keyPath, "Password", Password);
+                return true;
             }
             catch (Exception ex)
             {
@@ -56,38 +34,26 @@ namespace DVLD_Project.Global_Classes
 
         public static bool GetStoredCredential(ref string Username, ref string Password)
         {
+            string keyPath = @"HKEY_CURRENT_USER\SOFTWARE\DVLD";
+
             //this will get the stored username and password and will return true if found and false if not found.
             try
             {
-                //gets the current project's directory
-                string currentDirectory = System.IO.Directory.GetCurrentDirectory();
+                string usernameValue = Registry.GetValue(keyPath, "Username", null) as string;
+                string passwordValue = Registry.GetValue(keyPath, "Password", null) as string;
 
-                // Path for the file that contains the credential.
-                string filePath = currentDirectory + "\\data.txt";
-
-                // Check if the file exists before attempting to read it
-                if (File.Exists(filePath))
+                if (usernameValue != null && passwordValue != null)
                 {
-                    // Create a StreamReader to read from the file
-                    using (StreamReader reader = new StreamReader(filePath))
-                    {
-                        // Read data line by line until the end of the file
-                        string line;
-                        while ((line = reader.ReadLine()) != null)
-                        {
-                            Console.WriteLine(line); // Output each line of data to the console
-                            string[] result = line.Split(new string[] { "#//#" }, StringSplitOptions.None);
-
-                            Username = result[0];
-                            Password = result[1];
-                        }
-                        return true;
-                    }
+                    Username = usernameValue;
+                    Password = passwordValue;
+                    return true;
                 }
+
                 else
-                {
+                { 
                     return false;
                 }
+                
             }
             catch (Exception ex)
             {
