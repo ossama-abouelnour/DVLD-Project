@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
+using System.Diagnostics;
 
 namespace DVLD_Project.Global_Classes
 {
@@ -14,6 +15,7 @@ namespace DVLD_Project.Global_Classes
     {
 
         public static clsUser CurrentUser;
+        public static string AppSourceName = "DVLD";
 
         public static bool RememberUsernameAndPassword(string Username, string Password)
         {
@@ -27,6 +29,14 @@ namespace DVLD_Project.Global_Classes
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred: {ex.Message}");
+
+                if(!EventLog.SourceExists(AppSourceName))
+                {
+                    EventLog.CreateEventSource(AppSourceName, "Application");
+                }
+
+                EventLog.WriteEntry(AppSourceName, $"An error occurred: {ex.Message}", EventLogEntryType.Error);
+
                 return false;
             }
 
@@ -58,6 +68,12 @@ namespace DVLD_Project.Global_Classes
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred: {ex.Message}");
+                if (!EventLog.SourceExists(AppSourceName))
+                {
+                    EventLog.CreateEventSource(AppSourceName, "Application");
+                }
+
+                EventLog.WriteEntry(AppSourceName, $"An error occurred: {ex.Message}", EventLogEntryType.Error);
                 return false;
             }
 

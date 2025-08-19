@@ -3,28 +3,15 @@
   "WorkspaceRootPath": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EEB1290B-021E-4694-80F9-F4DD0A359525}|..\\DVLD_DataAccess\\DVLD_DataAccess.csproj|d:\\repos\\github\\dvld-project\\dvld_dataaccess\\clsapplicationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\global classes\\clsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:global classes\\clsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|d:\\repos\\github\\dvld-project\\dvld-project\\applications\\international license\\frmlistinternationallicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:applications\\international license\\frmlistinternationallicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\applications\\international license\\frmlistinternationallicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B9DC77-FD7C-423B-8137-4A9ADAC1F261}|DVLD-Project.csproj|solutionrelative:applications\\international license\\frmlistinternationallicenseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,44 +30,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "clsApplicationData.cs",
+              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsApplicationData.cs",
+              "RelativeDocumentMoniker": "..\\DVLD_DataAccess\\clsApplicationData.cs",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_DataAccess\\clsApplicationData.cs",
+              "RelativeToolTip": "..\\DVLD_DataAccess\\clsApplicationData.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwD4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T21:26:45.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "clsGlobal.cs",
               "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Global Classes\\clsGlobal.cs",
               "RelativeDocumentMoniker": "Global Classes\\clsGlobal.cs",
               "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Global Classes\\clsGlobal.cs",
               "RelativeToolTip": "Global Classes\\clsGlobal.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAiwDUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAqwEMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T21:27:02.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs",
-              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs",
-              "RelativeToolTip": "Login\\frmLogin.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA1wB0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T21:26:41.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs",
-              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs [Design]",
-              "RelativeToolTip": "Login\\frmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T21:26:36.066Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -88,31 +63,6 @@
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T21:26:13.455Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmListInternationalLicenseApplications.cs",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\International License\\frmListInternationalLicenseApplications.cs",
-              "RelativeDocumentMoniker": "Applications\\International License\\frmListInternationalLicenseApplications.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\International License\\frmListInternationalLicenseApplications.cs",
-              "RelativeToolTip": "Applications\\International License\\frmListInternationalLicenseApplications.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAhwFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T15:52:51.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmListInternationalLicenseApplications.cs [Design]",
-              "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\International License\\frmListInternationalLicenseApplications.cs",
-              "RelativeDocumentMoniker": "Applications\\International License\\frmListInternationalLicenseApplications.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Applications\\International License\\frmListInternationalLicenseApplications.cs [Design]",
-              "RelativeToolTip": "Applications\\International License\\frmListInternationalLicenseApplications.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T15:50:38.417Z",
               "EditorCaption": " [Design]"
             }
           ]
