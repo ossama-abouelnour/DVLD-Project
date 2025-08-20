@@ -35,24 +35,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "clsUser.cs",
               "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsUser.cs",
               "RelativeDocumentMoniker": "..\\DVLD_Business\\clsUser.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsUser.cs*",
-              "RelativeToolTip": "..\\DVLD_Business\\clsUser.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowCYAAAAlAAAAAAAAAA==",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD_Business\\clsUser.cs",
+              "RelativeToolTip": "..\\DVLD_Business\\clsUser.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAcwCYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T21:29:24.27Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
@@ -73,8 +73,8 @@
               "Title": "frmLogin.cs",
               "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs",
               "RelativeDocumentMoniker": "Login\\frmLogin.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs*",
-              "RelativeToolTip": "Login\\frmLogin.cs*",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs",
+              "RelativeToolTip": "Login\\frmLogin.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAEMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T21:10:06.671Z",
@@ -86,8 +86,8 @@
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs",
               "RelativeDocumentMoniker": "Login\\frmLogin.cs",
-              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs [Design]*",
-              "RelativeToolTip": "Login\\frmLogin.cs [Design]*",
+              "ToolTip": "D:\\repos\\GitHub\\DVLD-Project\\DVLD-Project\\Login\\frmLogin.cs [Design]",
+              "RelativeToolTip": "Login\\frmLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T21:10:02.9Z",
               "EditorCaption": " [Design]"
