@@ -50,6 +50,7 @@
     <Compile Include="clsLicense.cs" />
     <Compile Include="clsLicenseClass.cs" />
     <Compile Include="clsLocalDrivingLicenseApplication.cs" />
+    <Compile Include="clsPasswordHashing.cs" />
     <Compile Include="clsPerson.cs" />
     <Compile Include="clsRevokedLicense.cs" />
     <Compile Include="clsTest.cs" />

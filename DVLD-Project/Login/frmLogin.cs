@@ -21,13 +21,14 @@ namespace DVLD_Project.Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            clsUser User = clsUser.FindByUsernameAndPassword(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+            string password = clsPasswordHashing.ComputeHash(txtPassword.Text.Trim());
+            clsUser User = clsUser.FindByUsernameAndPassword(txtUsername.Text.Trim(), password);
 
             if (User != null)
             { 
                 if(chkRememberMe.Checked)
                 {
-                    clsGlobal.RememberUsernameAndPassword(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+                    clsGlobal.RememberUsernameAndPassword(txtUsername.Text.Trim(), password);
                 }
 
                 else

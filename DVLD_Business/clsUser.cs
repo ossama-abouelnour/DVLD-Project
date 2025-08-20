@@ -43,6 +43,8 @@ namespace DVLD_Business
 
         private bool _AddNewUser()
         {
+            this.Password = clsPasswordHashing.ComputeHash(this.Password);
+
             this.UserID = clsUserData.AddNewUser(this.PersonID, this.UserName, this.Password, this.IsActive);
 
             return (this.UserID != -1);
@@ -50,6 +52,7 @@ namespace DVLD_Business
 
         private bool _UpdateUser()
         {
+            this.Password = clsPasswordHashing.ComputeHash(this.Password);
             return clsUserData.UpdateUser(this.UserID, this.PersonID, this.UserName, this.Password, this.IsActive);
         }
 
